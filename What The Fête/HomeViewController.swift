@@ -17,10 +17,8 @@ class HomeViewController: UIViewController {
         println("_____ View Did Load _____")
         
         Alamofire.request(.GET, "https://www.dropbox.com/s/pimp87dtgn2wdae/wtf.json?dl=1")
-            .response { (request, response, data, error) in
-                println(request)
-                println(response)
-                println(error)
+            .responseJSON { (_, _, JSON, _) in
+                println(JSON)
         }
 
         // Do any additional setup after loading the view.
