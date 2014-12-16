@@ -15,6 +15,7 @@
 		2D1AE7D71A4058DA00F111E6 /* What_The_Fe_teTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1AE7D61A4058DA00F111E6 /* What_The_Fe_teTests.swift */; };
 		2D1AE7E71A405DF900F111E6 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D1AE7E61A405DF900F111E6 /* FacebookSDK.framework */; };
 		2DCFD5301A4087BF006E0732 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DCFD52F1A4087BF006E0732 /* HomeViewController.swift */; };
+		AD5E68771A40929A00FBF012 /* Alamofire.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = AD5E686C1A40918E00FBF012 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		ADBCCC4E1A406CC9000C55A0 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBCCC4D1A406CC9000C55A0 /* FacebookSDK.framework */; };
 /* End PBXBuildFile section */
 
@@ -26,7 +27,42 @@
 			remoteGlobalIDString = 2D1AE7BA1A4058DA00F111E6;
 			remoteInfo = "What The Fête";
 		};
+		AD5E686B1A40918E00FBF012 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AD5E68661A40918D00FBF012 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3319A95C8B0040E7D1;
+			remoteInfo = Alamofire;
+		};
+		AD5E686D1A40918E00FBF012 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AD5E68661A40918D00FBF012 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3E19A95C8B0040E7D1;
+			remoteInfo = AlamofireTests;
+		};
+		AD5E68741A40928200FBF012 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AD5E68661A40918D00FBF012 /* Alamofire.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F8111E3219A95C8B0040E7D1;
+			remoteInfo = Alamofire;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AD5E68761A40928800FBF012 /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				AD5E68771A40929A00FBF012 /* Alamofire.framework in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		2D1AE7BB1A4058DA00F111E6 /* What The Fête.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "What The Fête.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -42,6 +78,7 @@
 		2D1AE7E61A405DF900F111E6 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../../../../FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
 		2D1AE7E81A405EFF00F111E6 /* Bridge-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridge-Header.h"; sourceTree = "<group>"; };
 		2DCFD52F1A4087BF006E0732 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		AD5E68661A40918D00FBF012 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
 		ADBCCC4D1A406CC9000C55A0 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../../Documents/FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -73,6 +110,7 @@
 				2D1AE7BD1A4058DA00F111E6 /* What The Fête */,
 				2D1AE7D31A4058DA00F111E6 /* What The FêteTests */,
 				2D1AE7BC1A4058DA00F111E6 /* Products */,
+				AD5E68661A40918D00FBF012 /* Alamofire.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +163,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		AD5E68671A40918D00FBF012 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AD5E686C1A40918E00FBF012 /* Alamofire.framework */,
+				AD5E686E1A40918E00FBF012 /* AlamofireTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,10 +182,12 @@
 				2D1AE7B71A4058DA00F111E6 /* Sources */,
 				2D1AE7B81A4058DA00F111E6 /* Frameworks */,
 				2D1AE7B91A4058DA00F111E6 /* Resources */,
+				AD5E68761A40928800FBF012 /* Copy Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				AD5E68751A40928200FBF012 /* PBXTargetDependency */,
 			);
 			name = "What The Fête";
 			productName = "What The Fête";
@@ -192,6 +241,12 @@
 			mainGroup = 2D1AE7B21A4058DA00F111E6;
 			productRefGroup = 2D1AE7BC1A4058DA00F111E6 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = AD5E68671A40918D00FBF012 /* Products */;
+					ProjectRef = AD5E68661A40918D00FBF012 /* Alamofire.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				2D1AE7BA1A4058DA00F111E6 /* What The Fête */,
@@ -199,6 +254,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		AD5E686C1A40918E00FBF012 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = AD5E686B1A40918E00FBF012 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AD5E686E1A40918E00FBF012 /* AlamofireTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = AlamofireTests.xctest;
+			remoteRef = AD5E686D1A40918E00FBF012 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		2D1AE7B91A4058DA00F111E6 /* Resources */ = {
@@ -246,6 +318,11 @@
 			isa = PBXTargetDependency;
 			target = 2D1AE7BA1A4058DA00F111E6 /* What The Fête */;
 			targetProxy = 2D1AE7D11A4058DA00F111E6 /* PBXContainerItemProxy */;
+		};
+		AD5E68751A40928200FBF012 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Alamofire;
+			targetProxy = AD5E68741A40928200FBF012 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

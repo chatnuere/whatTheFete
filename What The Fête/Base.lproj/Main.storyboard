@@ -46,22 +46,23 @@
         <!--Navigation Controller-->
         <scene sceneID="TeO-A0-dFG">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="53H-Wf-nh9" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController id="waw-dr-Va7" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="cX4-A5-zBR">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="ZQO-qJ-iHI" kind="show" id="osM-Vd-qd9"/>
+                        <segue destination="ZQO-qJ-iHI" kind="relationship" relationship="rootViewController" id="n6Q-Ev-2dD"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="53H-Wf-nh9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1244" y="303"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="aXG-06-j9k">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TjJ-sL-5o7" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="ZQO-qJ-iHI" customClass="HomeViewController" customModule="What_The_Fe_te" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="tuz-nH-8yA"/>
@@ -72,8 +73,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="kQi-ko-HWI"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="TjJ-sL-5o7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2033" y="286"/>
         </scene>
