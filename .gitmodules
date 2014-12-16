@@ -1,0 +1,3 @@
+[submodule "What The Fête/Alamofire"]
+	path = What The Fête/Alamofire
+	url = https://github.com/Alamofire/Alamofire.git
