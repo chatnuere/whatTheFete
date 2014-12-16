@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2D1AE7C11A4058DA00F111E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1AE7C01A4058DA00F111E6 /* AppDelegate.swift */; };
-		2D1AE7C31A4058DA00F111E6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1AE7C21A4058DA00F111E6 /* ViewController.swift */; };
+		2D1AE7C31A4058DA00F111E6 /* FbLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1AE7C21A4058DA00F111E6 /* FbLoginViewController.swift */; };
 		2D1AE7C61A4058DA00F111E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D1AE7C41A4058DA00F111E6 /* Main.storyboard */; };
 		2D1AE7C81A4058DA00F111E6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D1AE7C71A4058DA00F111E6 /* Images.xcassets */; };
 		2D1AE7CB1A4058DA00F111E6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D1AE7C91A4058DA00F111E6 /* LaunchScreen.xib */; };
@@ -30,7 +30,7 @@
 		2D1AE7BB1A4058DA00F111E6 /* What The Fête.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "What The Fête.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D1AE7BF1A4058DA00F111E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2D1AE7C01A4058DA00F111E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2D1AE7C21A4058DA00F111E6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2D1AE7C21A4058DA00F111E6 /* FbLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FbLoginViewController.swift; sourceTree = "<group>"; };
 		2D1AE7C51A4058DA00F111E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2D1AE7C71A4058DA00F111E6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		2D1AE7CA1A4058DA00F111E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -83,7 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				2D1AE7C01A4058DA00F111E6 /* AppDelegate.swift */,
-				2D1AE7C21A4058DA00F111E6 /* ViewController.swift */,
+				2D1AE7C21A4058DA00F111E6 /* FbLoginViewController.swift */,
 				2D1AE7E81A405EFF00F111E6 /* Bridge-Header.h */,
 				2D1AE7C41A4058DA00F111E6 /* Main.storyboard */,
 				2D1AE7C71A4058DA00F111E6 /* Images.xcassets */,
@@ -218,7 +218,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2D1AE7C31A4058DA00F111E6 /* ViewController.swift in Sources */,
+				2D1AE7C31A4058DA00F111E6 /* FbLoginViewController.swift in Sources */,
 				2D1AE7C11A4058DA00F111E6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -423,6 +423,7 @@
 				2D1AE7DC1A4058DA00F111E6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2D1AE7DD1A4058DA00F111E6 /* Build configuration list for PBXNativeTarget "What The FêteTests" */ = {
 			isa = XCConfigurationList;
@@ -431,6 +432,7 @@
 				2D1AE7DF1A4058DA00F111E6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

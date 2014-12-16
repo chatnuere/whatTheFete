@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  FbLoginViewController.swift
 //  What The Fête
 //
 //  Created by Pierre-Jean DUGUÉ on 16/12/2014.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, FBLoginViewDelegate {
+class FbLoginViewController: UIViewController, FBLoginViewDelegate {
     
     @IBOutlet var fbLoginView : FBLoginView!
 
@@ -19,6 +19,7 @@ class ViewController: UIViewController, FBLoginViewDelegate {
         self.fbLoginView.delegate = self
         self.fbLoginView.readPermissions = ["public_profile", "email", "user_friends"]
     }
+    
     
     
     // Facebook Delegate Methods
@@ -33,6 +34,8 @@ class ViewController: UIViewController, FBLoginViewDelegate {
         println("User Name: \(user.name)")
         var userEmail = user.objectForKey("email") as String
         println("User Email: \(userEmail)")
+        
+        
     }
     
     func loginViewShowingLoggedOutUser(loginView : FBLoginView!) {
