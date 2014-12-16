@@ -14,6 +14,7 @@
 		2D1AE7CB1A4058DA00F111E6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D1AE7C91A4058DA00F111E6 /* LaunchScreen.xib */; };
 		2D1AE7D71A4058DA00F111E6 /* What_The_Fe_teTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1AE7D61A4058DA00F111E6 /* What_The_Fe_teTests.swift */; };
 		2D1AE7E71A405DF900F111E6 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D1AE7E61A405DF900F111E6 /* FacebookSDK.framework */; };
+		2DCFD5301A4087BF006E0732 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DCFD52F1A4087BF006E0732 /* HomeViewController.swift */; };
 		ADBCCC4E1A406CC9000C55A0 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBCCC4D1A406CC9000C55A0 /* FacebookSDK.framework */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +41,7 @@
 		2D1AE7D61A4058DA00F111E6 /* What_The_Fe_teTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = What_The_Fe_teTests.swift; sourceTree = "<group>"; };
 		2D1AE7E61A405DF900F111E6 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../../../../FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
 		2D1AE7E81A405EFF00F111E6 /* Bridge-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridge-Header.h"; sourceTree = "<group>"; };
+		2DCFD52F1A4087BF006E0732 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		ADBCCC4D1A406CC9000C55A0 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../../Documents/FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -90,6 +92,7 @@
 				2D1AE7C21A4058DA00F111E6 /* FbLoginViewController.swift */,
 				2D1AE7E81A405EFF00F111E6 /* Bridge-Header.h */,
 				2D1AE7C41A4058DA00F111E6 /* Main.storyboard */,
+				2DCFD52F1A4087BF006E0732 /* HomeViewController.swift */,
 				2D1AE7C71A4058DA00F111E6 /* Images.xcassets */,
 				2D1AE7C91A4058DA00F111E6 /* LaunchScreen.xib */,
 				2D1AE7BE1A4058DA00F111E6 /* Supporting Files */,
@@ -224,6 +227,7 @@
 			files = (
 				2D1AE7C31A4058DA00F111E6 /* FbLoginViewController.swift in Sources */,
 				2D1AE7C11A4058DA00F111E6 /* AppDelegate.swift in Sources */,
+				2DCFD5301A4087BF006E0732 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

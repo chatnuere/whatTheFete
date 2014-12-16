@@ -35,11 +35,14 @@ class FbLoginViewController: UIViewController, FBLoginViewDelegate {
         var userEmail = user.objectForKey("email") as String
         println("User Email: \(userEmail)")
         
+        self.performSegueWithIdentifier("loggedSegue", sender: user)
         
     }
     
-    func loginViewShowingLoggedOutUser(loginView : FBLoginView!) {
+    func loginViewShowingLoggedOutUser(loginView : FBLoginView!, user: FBGraphUser) {
         println("User Logged Out")
+        
+
     }
     
     func loginView(loginView : FBLoginView!, handleError:NSError) {
