@@ -13,9 +13,12 @@
 		2D1AE7C81A4058DA00F111E6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D1AE7C71A4058DA00F111E6 /* Images.xcassets */; };
 		2D1AE7CB1A4058DA00F111E6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D1AE7C91A4058DA00F111E6 /* LaunchScreen.xib */; };
 		2D1AE7D71A4058DA00F111E6 /* What_The_Fe_teTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1AE7D61A4058DA00F111E6 /* What_The_Fe_teTests.swift */; };
-		2D1AE7E71A405DF900F111E6 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D1AE7E61A405DF900F111E6 /* FacebookSDK.framework */; };
+		2D9507F41A40C54600B011A5 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AD5E686C1A40918E00FBF012 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2DA27C521A40D579002B3AF8 /* Soiree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA27C511A40D579002B3AF8 /* Soiree.swift */; };
+		2DA27C551A40D80F002B3AF8 /* SoireeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA27C541A40D80F002B3AF8 /* SoireeTableViewCell.swift */; };
+		2DA27C571A41765E002B3AF8 /* DetailSoireeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA27C561A41765E002B3AF8 /* DetailSoireeViewController.swift */; };
+		2DA27C5A1A417E04002B3AF8 /* AddSoireeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA27C591A417E04002B3AF8 /* AddSoireeViewController.swift */; };
 		2DCFD5301A4087BF006E0732 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DCFD52F1A4087BF006E0732 /* HomeViewController.swift */; };
-		AD5E68771A40929A00FBF012 /* Alamofire.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = AD5E686C1A40918E00FBF012 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		ADBCCC4E1A406CC9000C55A0 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBCCC4D1A406CC9000C55A0 /* FacebookSDK.framework */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +29,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 2D1AE7BA1A4058DA00F111E6;
 			remoteInfo = "What The Fête";
+		};
+		2D9507F51A40C54600B011A5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AD5E68661A40918D00FBF012 /* Alamofire.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F8111E3219A95C8B0040E7D1;
+			remoteInfo = Alamofire;
 		};
 		AD5E686B1A40918E00FBF012 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -41,25 +51,18 @@
 			remoteGlobalIDString = F8111E3E19A95C8B0040E7D1;
 			remoteInfo = AlamofireTests;
 		};
-		AD5E68741A40928200FBF012 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AD5E68661A40918D00FBF012 /* Alamofire.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = F8111E3219A95C8B0040E7D1;
-			remoteInfo = Alamofire;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		AD5E68761A40928800FBF012 /* Copy Frameworks */ = {
+		2D9507F71A40C54600B011A5 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 12;
+			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				AD5E68771A40929A00FBF012 /* Alamofire.framework in Copy Frameworks */,
+				2D9507F41A40C54600B011A5 /* Alamofire.framework in Embed Frameworks */,
 			);
-			name = "Copy Frameworks";
+			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -75,8 +78,11 @@
 		2D1AE7D01A4058DA00F111E6 /* What The FêteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "What The FêteTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D1AE7D51A4058DA00F111E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2D1AE7D61A4058DA00F111E6 /* What_The_Fe_teTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = What_The_Fe_teTests.swift; sourceTree = "<group>"; };
-		2D1AE7E61A405DF900F111E6 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../../../../FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
 		2D1AE7E81A405EFF00F111E6 /* Bridge-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridge-Header.h"; sourceTree = "<group>"; };
+		2DA27C511A40D579002B3AF8 /* Soiree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Soiree.swift; sourceTree = "<group>"; };
+		2DA27C541A40D80F002B3AF8 /* SoireeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoireeTableViewCell.swift; sourceTree = "<group>"; };
+		2DA27C561A41765E002B3AF8 /* DetailSoireeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailSoireeViewController.swift; sourceTree = "<group>"; };
+		2DA27C591A417E04002B3AF8 /* AddSoireeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddSoireeViewController.swift; sourceTree = "<group>"; };
 		2DCFD52F1A4087BF006E0732 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		AD5E68661A40918D00FBF012 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
 		ADBCCC4D1A406CC9000C55A0 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../../Documents/FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
@@ -87,7 +93,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2D1AE7E71A405DF900F111E6 /* FacebookSDK.framework in Frameworks */,
 				ADBCCC4E1A406CC9000C55A0 /* FacebookSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -105,7 +110,6 @@
 		2D1AE7B21A4058DA00F111E6 = {
 			isa = PBXGroup;
 			children = (
-				2D1AE7E61A405DF900F111E6 /* FacebookSDK.framework */,
 				ADBCCC4D1A406CC9000C55A0 /* FacebookSDK.framework */,
 				2D1AE7BD1A4058DA00F111E6 /* What The Fête */,
 				2D1AE7D31A4058DA00F111E6 /* What The FêteTests */,
@@ -128,8 +132,12 @@
 			children = (
 				2D1AE7C01A4058DA00F111E6 /* AppDelegate.swift */,
 				2D1AE7C21A4058DA00F111E6 /* FbLoginViewController.swift */,
+				2DA27C511A40D579002B3AF8 /* Soiree.swift */,
+				2DA27C541A40D80F002B3AF8 /* SoireeTableViewCell.swift */,
 				2D1AE7E81A405EFF00F111E6 /* Bridge-Header.h */,
+				2DA27C591A417E04002B3AF8 /* AddSoireeViewController.swift */,
 				2D1AE7C41A4058DA00F111E6 /* Main.storyboard */,
+				2DA27C561A41765E002B3AF8 /* DetailSoireeViewController.swift */,
 				2DCFD52F1A4087BF006E0732 /* HomeViewController.swift */,
 				2D1AE7C71A4058DA00F111E6 /* Images.xcassets */,
 				2D1AE7C91A4058DA00F111E6 /* LaunchScreen.xib */,
@@ -182,12 +190,12 @@
 				2D1AE7B71A4058DA00F111E6 /* Sources */,
 				2D1AE7B81A4058DA00F111E6 /* Frameworks */,
 				2D1AE7B91A4058DA00F111E6 /* Resources */,
-				AD5E68761A40928800FBF012 /* Copy Frameworks */,
+				2D9507F71A40C54600B011A5 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				AD5E68751A40928200FBF012 /* PBXTargetDependency */,
+				2D9507F61A40C54600B011A5 /* PBXTargetDependency */,
 			);
 			name = "What The Fête";
 			productName = "What The Fête";
@@ -297,8 +305,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2DA27C571A41765E002B3AF8 /* DetailSoireeViewController.swift in Sources */,
 				2D1AE7C31A4058DA00F111E6 /* FbLoginViewController.swift in Sources */,
 				2D1AE7C11A4058DA00F111E6 /* AppDelegate.swift in Sources */,
+				2DA27C551A40D80F002B3AF8 /* SoireeTableViewCell.swift in Sources */,
+				2DA27C5A1A417E04002B3AF8 /* AddSoireeViewController.swift in Sources */,
+				2DA27C521A40D579002B3AF8 /* Soiree.swift in Sources */,
 				2DCFD5301A4087BF006E0732 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -319,10 +331,10 @@
 			target = 2D1AE7BA1A4058DA00F111E6 /* What The Fête */;
 			targetProxy = 2D1AE7D11A4058DA00F111E6 /* PBXContainerItemProxy */;
 		};
-		AD5E68751A40928200FBF012 /* PBXTargetDependency */ = {
+		2D9507F61A40C54600B011A5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Alamofire;
-			targetProxy = AD5E68741A40928200FBF012 /* PBXContainerItemProxy */;
+			targetProxy = 2D9507F51A40C54600B011A5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -427,6 +439,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -444,6 +457,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",

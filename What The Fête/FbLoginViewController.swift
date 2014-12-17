@@ -12,6 +12,8 @@ class FbLoginViewController: UIViewController, FBLoginViewDelegate {
     
     @IBOutlet var fbLoginView : FBLoginView!
 
+    var didFetchUserInfo:Bool = false
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -24,8 +26,10 @@ class FbLoginViewController: UIViewController, FBLoginViewDelegate {
     
     // Facebook Delegate Methods
     
-    func loginViewShowingLoggedInUser(loginView : FBLoginView!) {
+    func loginViewShowingLoggedInUser(loginView : FBLoginView!,user: FBGraphUser) {
         println("User Logged In")
+        
+        
     }
     
     func loginViewFetchedUserInfo(loginView : FBLoginView!, user: FBGraphUser) {
@@ -35,8 +39,11 @@ class FbLoginViewController: UIViewController, FBLoginViewDelegate {
         var userEmail = user.objectForKey("email") as String
         println("User Email: \(userEmail)")
         
-        self.performSegueWithIdentifier("loggedSegue", sender: user)
+        if !didFetchUserInfo {
+            self.performSegueWithIdentifier("loggedSegue", sender: user)
+        }
         
+        didFetchUserInfo = true
     }
     
     func loginViewShowingLoggedOutUser(loginView : FBLoginView!, user: FBGraphUser) {
