@@ -1,0 +1,28 @@
+//
+//  User.swift
+//  What The Fête
+//
+//  Created by Pierre-Jean DUGUÉ on 17/12/2014.
+//  Copyright (c) 2014 Pierre-Jean DUGUÉ. All rights reserved.
+//
+
+import UIKit
+
+class User: NSObject {
+    
+    var userId:Int!
+    var firstname:String!
+    var lastname:String!
+    var pictureurl:String!
+    
+    init(  userId:Int!, firstname:String!, lastname:String!, pictureurl:String! ) {
+        
+        self.userId     = userId
+        self.firstname  = firstname
+        self.lastname   = lastname
+        self.pictureurl = pictureurl
+        
+    }
+
+   
+}

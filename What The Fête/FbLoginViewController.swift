@@ -27,17 +27,17 @@ class FbLoginViewController: UIViewController, FBLoginViewDelegate {
     // Facebook Delegate Methods
     
     func loginViewShowingLoggedInUser(loginView : FBLoginView!,user: FBGraphUser) {
-        println("User Logged In")
+//        println("User Logged In")
         
         
     }
     
     func loginViewFetchedUserInfo(loginView : FBLoginView!, user: FBGraphUser) {
-        println("User: \(user)")
-        println("User ID: \(user.objectID)")
-        println("User Name: \(user.name)")
+//        println("User: \(user)")
+//        println("User ID: \(user.objectID)")
+//        println("User Name: \(user.name)")
         var userEmail = user.objectForKey("email") as String
-        println("User Email: \(userEmail)")
+//        println("User Email: \(userEmail)")
         
         if !didFetchUserInfo {
             self.performSegueWithIdentifier("loggedSegue", sender: user)
@@ -47,7 +47,7 @@ class FbLoginViewController: UIViewController, FBLoginViewDelegate {
     }
     
     func loginViewShowingLoggedOutUser(loginView : FBLoginView!, user: FBGraphUser) {
-        println("User Logged Out")
+//        println("User Logged Out")
         
 
     }
