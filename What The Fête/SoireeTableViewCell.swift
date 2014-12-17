@@ -10,6 +10,9 @@ import UIKit
 
 class SoireeTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var soireeTitle: UILabel!
+    @IBOutlet weak var soireeDescription: UILabel!
+    @IBOutlet weak var soireeDate: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -23,17 +26,8 @@ class SoireeTableViewCell: UITableViewCell {
     }
     
     func setSoiree(soiree:Soiree) {
-//        soireeTitleLabel.text=soiree.title
-//        videoGameRatingLabel.text="\(soiree.rating)"
+        soireeTitle.text        = soiree.title
+        soireeDescription.text  = soiree.soireeDescription
+        soireeDate.text         = soiree.date
     }
 }
-
-//
-//self.id                = id
-//self.name              = name
-//self.description       = description
-//self.date              = date
-//self.pictureurl        = pictureurl
-//self.participants      = participants
-//self.ratedParticipants = ratedParticipants
-//self.currentUserRate   = currentUserRate

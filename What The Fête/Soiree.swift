@@ -10,25 +10,18 @@ import UIKit
 
 class Soiree: NSObject {
     
-    var id:Int!
-    var name:String!
+    var title:String!
     var soireeDescription:String!
-    var date:Int!
-    var pictureurl:String!
-    var participants:Int!
-    var ratedParticipants:Int!
-    var currentUserRate : Int!
+    var date:String!
+    var coverpic:String!
     
-    init( id:Int!, name:String!, soireeDescription:String!, date:Int!, pictureurl:String!, participants:Int!, ratedParticipants:Int!, currentUserRate : Int! ) {
+    init(  title:String!, soireeDescription:String!, date:String!, coverpic:String! ) {
         
-        self.id                = id
-        self.name              = name
+        self.title             = title
         self.soireeDescription = soireeDescription
         self.date              = date
-        self.pictureurl        = pictureurl
-        self.participants      = participants
-        self.ratedParticipants = ratedParticipants
-        self.currentUserRate   = currentUserRate
+        self.coverpic          = coverpic
+
         
     }
 }

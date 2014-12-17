@@ -9,13 +9,16 @@
 import UIKit
 import Alamofire
 
-class HomeViewController: UIViewController {
+class HomeViewController: UIViewController, UITableViewDataSource {
     
     private var soirees:[Soiree]=[Soiree]()
     
     @IBOutlet weak var mainTableView: UITableView!
+
     
-    private let cellIdentifier = "soireeCellIdentifier"
+    
+    
+    private let cellIdentifier                 = "soireeCellIdentifier"
     private let detailVideoGameSegueIdentifier = "SingleSoireeSegueIdentifier"
     
     
@@ -27,21 +30,32 @@ class HomeViewController: UIViewController {
         println("_____ View Did Load _____")
         
         
-        Alamofire.request(.GET, "http://www.dugue.today/soiree.json", parameters: nil, encoding: ParameterEncoding.URL).responseJSON { (urlRequest:NSURLRequest, response:NSHTTPURLResponse?, data:AnyObject?, error:NSError?) -> Void in
+        Alamofire.request(.GET, "https://www.dropbox.com/s/pimp87dtgn2wdae/wtf.json?dl=1", parameters: nil, encoding: ParameterEncoding.URL).responseJSON { (urlRequest:NSURLRequest, response:NSHTTPURLResponse?, data:AnyObject?, error:NSError?) -> Void in
             
             var jsonObject = data as Dictionary<String,AnyObject>
             
-            ///println("data : \(data)")
             
-            var soireesFromJSON = jsonObject["soirees"] as [Dictionary<String,AnyObject>]
+            var soireesFromJSON = jsonObject["events"] as [Dictionary<String,AnyObject>]
+            
             
             for soireeFromJSON in soireesFromJSON {
-                var name = soireeFromJSON["name"]
-                var description = soireeFromJSON["description"]
+            
+                var title: AnyObject?       = soireeFromJSON["title"]
+                var description: AnyObject? = soireeFromJSON["description"]
+                var date: AnyObject?        = soireeFromJSON["date"]
+                var coverpic: AnyObject?    = soireeFromJSON["coverpic"]
+
+                var soiree = Soiree(title: "\(title)", soireeDescription: "\(description)", date: "\(date)", coverpic: "\(coverpic)" )
+                self.soirees.append(soiree)
                 
-                println("name : \(name)")
-                println("description : \(description)")
+                //self.mainTableView.insertRowsAtIndexPaths([NSIndexPath(forRow: self.soirees.count-1, inSection: 0)], withRowAnimation: UITableViewRowAnimation.Top)
+
+                
+                
             }
+            
+            self.mainTableView.reloadData()
+            
             
             
         }

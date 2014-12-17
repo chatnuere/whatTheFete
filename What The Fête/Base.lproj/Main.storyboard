@@ -76,14 +76,50 @@
                                 <rect key="frame" x="0.0" y="64" width="600" height="600"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="379" id="jfa-dE-hZZ">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="soireeCellIdentifier" rowHeight="379" id="jfa-dE-hZZ" customClass="SoireeTableViewCell" customModule="What_The_Fe_te" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jfa-dE-hZZ" id="7PV-MD-YYC">
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="titre" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uex-aq-u37">
+                                                    <rect key="frame" x="8" y="8" width="30" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="description" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IeG-uS-LgC">
+                                                    <rect key="frame" x="8" y="51" width="86" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="date" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="btg-tu-bf6">
+                                                    <rect key="frame" x="8" y="96" width="34" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Uex-aq-u37" firstAttribute="leading" secondItem="7PV-MD-YYC" secondAttribute="leadingMargin" id="JIA-zT-WY5"/>
+                                                <constraint firstItem="IeG-uS-LgC" firstAttribute="top" secondItem="Uex-aq-u37" secondAttribute="bottom" constant="22" id="OqR-r7-gee"/>
+                                                <constraint firstItem="Uex-aq-u37" firstAttribute="leading" secondItem="IeG-uS-LgC" secondAttribute="leading" id="Ox3-po-1XG"/>
+                                                <constraint firstItem="btg-tu-bf6" firstAttribute="top" secondItem="IeG-uS-LgC" secondAttribute="bottom" constant="24" id="YBP-ZB-5lx"/>
+                                                <constraint firstItem="Uex-aq-u37" firstAttribute="top" secondItem="7PV-MD-YYC" secondAttribute="topMargin" id="b1q-wd-glj"/>
+                                                <constraint firstItem="Uex-aq-u37" firstAttribute="leading" secondItem="btg-tu-bf6" secondAttribute="leading" id="etC-w5-KQV"/>
+                                            </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="soireeDate" destination="btg-tu-bf6" id="Ual-1n-hrw"/>
+                                            <outlet property="soireeDescription" destination="IeG-uS-LgC" id="W6L-Px-3GH"/>
+                                            <outlet property="soireeTitle" destination="Uex-aq-u37" id="6El-BW-gEB"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="ZQO-qJ-iHI" id="7Fw-BG-AdP"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -115,7 +151,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TjJ-sL-5o7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2031" y="176"/>
+            <point key="canvasLocation" x="2021" y="168"/>
         </scene>
         <!--Add Soiree View Controller-->
         <scene sceneID="0w2-J7-kbF">
