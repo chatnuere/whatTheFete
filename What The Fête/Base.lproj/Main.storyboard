@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -66,7 +67,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="53H-Wf-nh9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1370" y="-1"/>
+            <point key="canvasLocation" x="1304" y="168"/>
         </scene>
         <!--Accueil-->
         <scene sceneID="aXG-06-j9k">
@@ -194,11 +195,11 @@
                                                     <exclude reference="YNv-Me-liv"/>
                                                     <exclude reference="GM1-mH-FLp"/>
                                                     <exclude reference="ND8-Cq-EiO"/>
+                                                    <exclude reference="N6F-Bk-CpB"/>
+                                                    <exclude reference="jsZ-8z-DMU"/>
                                                     <exclude reference="Foe-N9-z9J"/>
                                                     <exclude reference="bv8-zy-XZ4"/>
                                                     <exclude reference="dhE-fe-sHF"/>
-                                                    <exclude reference="N6F-Bk-CpB"/>
-                                                    <exclude reference="jsZ-8z-DMU"/>
                                                 </mask>
                                             </variation>
                                             <variation key="widthClass=compact">
@@ -227,6 +228,7 @@
                                             <outlet property="soireeDate" destination="btg-tu-bf6" id="Ual-1n-hrw"/>
                                             <outlet property="soireeDescription" destination="IeG-uS-LgC" id="W6L-Px-3GH"/>
                                             <outlet property="soireeTitle" destination="Uex-aq-u37" id="6El-BW-gEB"/>
+                                            <segue destination="c3d-OH-BM6" kind="show" identifier="SingleSoireeSegueIdentifier" id="OfG-pC-tQF"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -265,7 +267,6 @@
                     </navigationItem>
                     <connections>
                         <outlet property="mainTableView" destination="1UT-dG-LC8" id="rKm-X5-AZW"/>
-                        <segue destination="c3d-OH-BM6" kind="show" identifier="SingleSoireeSegueIdentifier" id="CpR-OK-BMh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TjJ-sL-5o7" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -384,7 +385,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="giz-xS-ac5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2898" y="202"/>
+            <point key="canvasLocation" x="2898" y="228"/>
         </scene>
     </scenes>
     <resources>

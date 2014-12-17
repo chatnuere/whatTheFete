@@ -19,7 +19,7 @@ class HomeViewController: UIViewController, UITableViewDataSource {
     
     
     private let cellIdentifier                 = "soireeCellIdentifier"
-    private let detailVideoGameSegueIdentifier = "SingleSoireeSegueIdentifier"
+    private let detailSoireeSegueIdentifier = "SingleSoireeSegueIdentifier"
     
     
     
@@ -71,7 +71,7 @@ class HomeViewController: UIViewController, UITableViewDataSource {
         
         var segueIdentifier = segue.identifier
         
-        if segueIdentifier==detailVideoGameSegueIdentifier {
+        if segueIdentifier==detailSoireeSegueIdentifier {
             var detailSoireeViewController = segue.destinationViewController as DetailSoireeViewController
             
             if let indexRow = mainTableView.indexPathForSelectedRow()?.row {

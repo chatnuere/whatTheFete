@@ -14,6 +14,7 @@ class DetailSoireeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = soiree.title
 
         // Do any additional setup after loading the view.
     }
