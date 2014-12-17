@@ -19,6 +19,33 @@
 		2DA27C571A41765E002B3AF8 /* DetailSoireeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA27C561A41765E002B3AF8 /* DetailSoireeViewController.swift */; };
 		2DA27C5A1A417E04002B3AF8 /* AddSoireeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA27C591A417E04002B3AF8 /* AddSoireeViewController.swift */; };
 		2DCFD5301A4087BF006E0732 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DCFD52F1A4087BF006E0732 /* HomeViewController.swift */; };
+		AD4416C41A41D91D00F4EF5F /* ProximaNova-SemiboldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = AD4416A91A41D91D00F4EF5F /* ProximaNova-SemiboldItalic.otf */; };
+		AD4416C51A41D91D00F4EF5F /* ProximaNova-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = AD4416AA1A41D91D00F4EF5F /* ProximaNova-Semibold.otf */; };
+		AD4416C61A41D91D00F4EF5F /* ProximaNova-RegularItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = AD4416AB1A41D91D00F4EF5F /* ProximaNova-RegularItalic.otf */; };
+		AD4416C71A41D91D00F4EF5F /* ProximaNova-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = AD4416AC1A41D91D00F4EF5F /* ProximaNova-Regular.otf */; };
+		AD4416C81A41D91D00F4EF5F /* ProximaNova-RegItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = AD4416AD1A41D91D00F4EF5F /* ProximaNova-RegItalic.otf */; };
+		AD4416C91A41D91D00F4EF5F /* ProximaNova-LightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = AD4416AE1A41D91D00F4EF5F /* ProximaNova-LightItalic.otf */; };
+		AD4416CA1A41D91D00F4EF5F /* ProximaNova-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = AD4416AF1A41D91D00F4EF5F /* ProximaNova-Light.otf */; };
+		AD4416CB1A41D91D00F4EF5F /* ProximaNova-Extrabold.otf in Resources */ = {isa = PBXBuildFile; fileRef = AD4416B01A41D91D00F4EF5F /* ProximaNova-Extrabold.otf */; };
+		AD4416CC1A41D91D00F4EF5F /* ProximaNova-BoldIt.otf in Resources */ = {isa = PBXBuildFile; fileRef = AD4416B11A41D91D00F4EF5F /* ProximaNova-BoldIt.otf */; };
+		AD4416CD1A41D91D00F4EF5F /* ProximaNova-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = AD4416B21A41D91D00F4EF5F /* ProximaNova-Bold.otf */; };
+		AD4416CE1A41D91D00F4EF5F /* ProximaNova-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = AD4416B31A41D91D00F4EF5F /* ProximaNova-Black.otf */; };
+		AD4416CF1A41D91D00F4EF5F /* Gotham-XLightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = AD4416B41A41D91D00F4EF5F /* Gotham-XLightItalic.otf */; };
+		AD4416D01A41D91D00F4EF5F /* Gotham-XLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = AD4416B51A41D91D00F4EF5F /* Gotham-XLight.otf */; };
+		AD4416D11A41D91D00F4EF5F /* Gotham-UltraItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = AD4416B61A41D91D00F4EF5F /* Gotham-UltraItalic.otf */; };
+		AD4416D21A41D91D00F4EF5F /* Gotham-Ultra.otf in Resources */ = {isa = PBXBuildFile; fileRef = AD4416B71A41D91D00F4EF5F /* Gotham-Ultra.otf */; };
+		AD4416D31A41D91D00F4EF5F /* Gotham-ThinItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = AD4416B81A41D91D00F4EF5F /* Gotham-ThinItalic.otf */; };
+		AD4416D41A41D91D00F4EF5F /* Gotham-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = AD4416B91A41D91D00F4EF5F /* Gotham-Thin.otf */; };
+		AD4416D51A41D91D00F4EF5F /* Gotham-MediumItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = AD4416BA1A41D91D00F4EF5F /* Gotham-MediumItalic.otf */; };
+		AD4416D61A41D91D00F4EF5F /* Gotham-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = AD4416BB1A41D91D00F4EF5F /* Gotham-Medium.otf */; };
+		AD4416D71A41D91D00F4EF5F /* Gotham-LightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = AD4416BC1A41D91D00F4EF5F /* Gotham-LightItalic.otf */; };
+		AD4416D81A41D91D00F4EF5F /* Gotham-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = AD4416BD1A41D91D00F4EF5F /* Gotham-Light.otf */; };
+		AD4416D91A41D91D00F4EF5F /* Gotham-BookItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = AD4416BE1A41D91D00F4EF5F /* Gotham-BookItalic.otf */; };
+		AD4416DA1A41D91D00F4EF5F /* Gotham-Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = AD4416BF1A41D91D00F4EF5F /* Gotham-Book.otf */; };
+		AD4416DB1A41D91D00F4EF5F /* Gotham-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = AD4416C01A41D91D00F4EF5F /* Gotham-BoldItalic.otf */; };
+		AD4416DC1A41D91D00F4EF5F /* Gotham-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = AD4416C11A41D91D00F4EF5F /* Gotham-Bold.otf */; };
+		AD4416DD1A41D91D00F4EF5F /* Gotham-BlackItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = AD4416C21A41D91D00F4EF5F /* Gotham-BlackItalic.otf */; };
+		AD4416DE1A41D91D00F4EF5F /* Gotham-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = AD4416C31A41D91D00F4EF5F /* Gotham-Black.otf */; };
 		ADBCCC4E1A406CC9000C55A0 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBCCC4D1A406CC9000C55A0 /* FacebookSDK.framework */; };
 /* End PBXBuildFile section */
 
@@ -84,6 +111,33 @@
 		2DA27C561A41765E002B3AF8 /* DetailSoireeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailSoireeViewController.swift; sourceTree = "<group>"; };
 		2DA27C591A417E04002B3AF8 /* AddSoireeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddSoireeViewController.swift; sourceTree = "<group>"; };
 		2DCFD52F1A4087BF006E0732 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		AD4416A91A41D91D00F4EF5F /* ProximaNova-SemiboldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "ProximaNova-SemiboldItalic.otf"; path = "../../../../../Google Drive/WTF-H4/Assets/FONTS/PROXIMA-NOVA/ProximaNova-SemiboldItalic.otf"; sourceTree = "<group>"; };
+		AD4416AA1A41D91D00F4EF5F /* ProximaNova-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "ProximaNova-Semibold.otf"; path = "../../../../../Google Drive/WTF-H4/Assets/FONTS/PROXIMA-NOVA/ProximaNova-Semibold.otf"; sourceTree = "<group>"; };
+		AD4416AB1A41D91D00F4EF5F /* ProximaNova-RegularItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "ProximaNova-RegularItalic.otf"; path = "../../../../../Google Drive/WTF-H4/Assets/FONTS/PROXIMA-NOVA/ProximaNova-RegularItalic.otf"; sourceTree = "<group>"; };
+		AD4416AC1A41D91D00F4EF5F /* ProximaNova-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "ProximaNova-Regular.otf"; path = "../../../../../Google Drive/WTF-H4/Assets/FONTS/PROXIMA-NOVA/ProximaNova-Regular.otf"; sourceTree = "<group>"; };
+		AD4416AD1A41D91D00F4EF5F /* ProximaNova-RegItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "ProximaNova-RegItalic.otf"; path = "../../../../../Google Drive/WTF-H4/Assets/FONTS/PROXIMA-NOVA/ProximaNova-RegItalic.otf"; sourceTree = "<group>"; };
+		AD4416AE1A41D91D00F4EF5F /* ProximaNova-LightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "ProximaNova-LightItalic.otf"; path = "../../../../../Google Drive/WTF-H4/Assets/FONTS/PROXIMA-NOVA/ProximaNova-LightItalic.otf"; sourceTree = "<group>"; };
+		AD4416AF1A41D91D00F4EF5F /* ProximaNova-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "ProximaNova-Light.otf"; path = "../../../../../Google Drive/WTF-H4/Assets/FONTS/PROXIMA-NOVA/ProximaNova-Light.otf"; sourceTree = "<group>"; };
+		AD4416B01A41D91D00F4EF5F /* ProximaNova-Extrabold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "ProximaNova-Extrabold.otf"; path = "../../../../../Google Drive/WTF-H4/Assets/FONTS/PROXIMA-NOVA/ProximaNova-Extrabold.otf"; sourceTree = "<group>"; };
+		AD4416B11A41D91D00F4EF5F /* ProximaNova-BoldIt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "ProximaNova-BoldIt.otf"; path = "../../../../../Google Drive/WTF-H4/Assets/FONTS/PROXIMA-NOVA/ProximaNova-BoldIt.otf"; sourceTree = "<group>"; };
+		AD4416B21A41D91D00F4EF5F /* ProximaNova-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "ProximaNova-Bold.otf"; path = "../../../../../Google Drive/WTF-H4/Assets/FONTS/PROXIMA-NOVA/ProximaNova-Bold.otf"; sourceTree = "<group>"; };
+		AD4416B31A41D91D00F4EF5F /* ProximaNova-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "ProximaNova-Black.otf"; path = "../../../../../Google Drive/WTF-H4/Assets/FONTS/PROXIMA-NOVA/ProximaNova-Black.otf"; sourceTree = "<group>"; };
+		AD4416B41A41D91D00F4EF5F /* Gotham-XLightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Gotham-XLightItalic.otf"; path = "../../../../../Google Drive/WTF-H4/Assets/FONTS/Gotham/Gotham-XLightItalic.otf"; sourceTree = "<group>"; };
+		AD4416B51A41D91D00F4EF5F /* Gotham-XLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Gotham-XLight.otf"; path = "../../../../../Google Drive/WTF-H4/Assets/FONTS/Gotham/Gotham-XLight.otf"; sourceTree = "<group>"; };
+		AD4416B61A41D91D00F4EF5F /* Gotham-UltraItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Gotham-UltraItalic.otf"; path = "../../../../../Google Drive/WTF-H4/Assets/FONTS/Gotham/Gotham-UltraItalic.otf"; sourceTree = "<group>"; };
+		AD4416B71A41D91D00F4EF5F /* Gotham-Ultra.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Gotham-Ultra.otf"; path = "../../../../../Google Drive/WTF-H4/Assets/FONTS/Gotham/Gotham-Ultra.otf"; sourceTree = "<group>"; };
+		AD4416B81A41D91D00F4EF5F /* Gotham-ThinItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Gotham-ThinItalic.otf"; path = "../../../../../Google Drive/WTF-H4/Assets/FONTS/Gotham/Gotham-ThinItalic.otf"; sourceTree = "<group>"; };
+		AD4416B91A41D91D00F4EF5F /* Gotham-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Gotham-Thin.otf"; path = "../../../../../Google Drive/WTF-H4/Assets/FONTS/Gotham/Gotham-Thin.otf"; sourceTree = "<group>"; };
+		AD4416BA1A41D91D00F4EF5F /* Gotham-MediumItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Gotham-MediumItalic.otf"; path = "../../../../../Google Drive/WTF-H4/Assets/FONTS/Gotham/Gotham-MediumItalic.otf"; sourceTree = "<group>"; };
+		AD4416BB1A41D91D00F4EF5F /* Gotham-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Gotham-Medium.otf"; path = "../../../../../Google Drive/WTF-H4/Assets/FONTS/Gotham/Gotham-Medium.otf"; sourceTree = "<group>"; };
+		AD4416BC1A41D91D00F4EF5F /* Gotham-LightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Gotham-LightItalic.otf"; path = "../../../../../Google Drive/WTF-H4/Assets/FONTS/Gotham/Gotham-LightItalic.otf"; sourceTree = "<group>"; };
+		AD4416BD1A41D91D00F4EF5F /* Gotham-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Gotham-Light.otf"; path = "../../../../../Google Drive/WTF-H4/Assets/FONTS/Gotham/Gotham-Light.otf"; sourceTree = "<group>"; };
+		AD4416BE1A41D91D00F4EF5F /* Gotham-BookItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Gotham-BookItalic.otf"; path = "../../../../../Google Drive/WTF-H4/Assets/FONTS/Gotham/Gotham-BookItalic.otf"; sourceTree = "<group>"; };
+		AD4416BF1A41D91D00F4EF5F /* Gotham-Book.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Gotham-Book.otf"; path = "../../../../../Google Drive/WTF-H4/Assets/FONTS/Gotham/Gotham-Book.otf"; sourceTree = "<group>"; };
+		AD4416C01A41D91D00F4EF5F /* Gotham-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Gotham-BoldItalic.otf"; path = "../../../../../Google Drive/WTF-H4/Assets/FONTS/Gotham/Gotham-BoldItalic.otf"; sourceTree = "<group>"; };
+		AD4416C11A41D91D00F4EF5F /* Gotham-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Gotham-Bold.otf"; path = "../../../../../Google Drive/WTF-H4/Assets/FONTS/Gotham/Gotham-Bold.otf"; sourceTree = "<group>"; };
+		AD4416C21A41D91D00F4EF5F /* Gotham-BlackItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Gotham-BlackItalic.otf"; path = "../../../../../Google Drive/WTF-H4/Assets/FONTS/Gotham/Gotham-BlackItalic.otf"; sourceTree = "<group>"; };
+		AD4416C31A41D91D00F4EF5F /* Gotham-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Gotham-Black.otf"; path = "../../../../../Google Drive/WTF-H4/Assets/FONTS/Gotham/Gotham-Black.otf"; sourceTree = "<group>"; };
 		AD5E68661A40918D00FBF012 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
 		ADBCCC4D1A406CC9000C55A0 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../../Documents/FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -130,6 +184,7 @@
 		2D1AE7BD1A4058DA00F111E6 /* What The Fête */ = {
 			isa = PBXGroup;
 			children = (
+				AD4416A71A41D8DA00F4EF5F /* Fonts */,
 				2D1AE7C01A4058DA00F111E6 /* AppDelegate.swift */,
 				2D1AE7C21A4058DA00F111E6 /* FbLoginViewController.swift */,
 				2DA27C511A40D579002B3AF8 /* Soiree.swift */,
@@ -169,6 +224,41 @@
 				2D1AE7D51A4058DA00F111E6 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AD4416A71A41D8DA00F4EF5F /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				AD4416A91A41D91D00F4EF5F /* ProximaNova-SemiboldItalic.otf */,
+				AD4416AA1A41D91D00F4EF5F /* ProximaNova-Semibold.otf */,
+				AD4416AB1A41D91D00F4EF5F /* ProximaNova-RegularItalic.otf */,
+				AD4416AC1A41D91D00F4EF5F /* ProximaNova-Regular.otf */,
+				AD4416AD1A41D91D00F4EF5F /* ProximaNova-RegItalic.otf */,
+				AD4416AE1A41D91D00F4EF5F /* ProximaNova-LightItalic.otf */,
+				AD4416AF1A41D91D00F4EF5F /* ProximaNova-Light.otf */,
+				AD4416B01A41D91D00F4EF5F /* ProximaNova-Extrabold.otf */,
+				AD4416B11A41D91D00F4EF5F /* ProximaNova-BoldIt.otf */,
+				AD4416B21A41D91D00F4EF5F /* ProximaNova-Bold.otf */,
+				AD4416B31A41D91D00F4EF5F /* ProximaNova-Black.otf */,
+				AD4416B41A41D91D00F4EF5F /* Gotham-XLightItalic.otf */,
+				AD4416B51A41D91D00F4EF5F /* Gotham-XLight.otf */,
+				AD4416B61A41D91D00F4EF5F /* Gotham-UltraItalic.otf */,
+				AD4416B71A41D91D00F4EF5F /* Gotham-Ultra.otf */,
+				AD4416B81A41D91D00F4EF5F /* Gotham-ThinItalic.otf */,
+				AD4416B91A41D91D00F4EF5F /* Gotham-Thin.otf */,
+				AD4416BA1A41D91D00F4EF5F /* Gotham-MediumItalic.otf */,
+				AD4416BB1A41D91D00F4EF5F /* Gotham-Medium.otf */,
+				AD4416BC1A41D91D00F4EF5F /* Gotham-LightItalic.otf */,
+				AD4416BD1A41D91D00F4EF5F /* Gotham-Light.otf */,
+				AD4416BE1A41D91D00F4EF5F /* Gotham-BookItalic.otf */,
+				AD4416BF1A41D91D00F4EF5F /* Gotham-Book.otf */,
+				AD4416C01A41D91D00F4EF5F /* Gotham-BoldItalic.otf */,
+				AD4416C11A41D91D00F4EF5F /* Gotham-Bold.otf */,
+				AD4416C21A41D91D00F4EF5F /* Gotham-BlackItalic.otf */,
+				AD4416C31A41D91D00F4EF5F /* Gotham-Black.otf */,
+			);
+			name = Fonts;
+			path = fonts;
 			sourceTree = "<group>";
 		};
 		AD5E68671A40918D00FBF012 /* Products */ = {
@@ -286,8 +376,35 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D1AE7C61A4058DA00F111E6 /* Main.storyboard in Resources */,
+				AD4416C71A41D91D00F4EF5F /* ProximaNova-Regular.otf in Resources */,
+				AD4416DA1A41D91D00F4EF5F /* Gotham-Book.otf in Resources */,
+				AD4416D61A41D91D00F4EF5F /* Gotham-Medium.otf in Resources */,
+				AD4416CF1A41D91D00F4EF5F /* Gotham-XLightItalic.otf in Resources */,
+				AD4416C91A41D91D00F4EF5F /* ProximaNova-LightItalic.otf in Resources */,
+				AD4416CD1A41D91D00F4EF5F /* ProximaNova-Bold.otf in Resources */,
+				AD4416D01A41D91D00F4EF5F /* Gotham-XLight.otf in Resources */,
+				AD4416DC1A41D91D00F4EF5F /* Gotham-Bold.otf in Resources */,
+				AD4416D41A41D91D00F4EF5F /* Gotham-Thin.otf in Resources */,
+				AD4416DD1A41D91D00F4EF5F /* Gotham-BlackItalic.otf in Resources */,
+				AD4416CB1A41D91D00F4EF5F /* ProximaNova-Extrabold.otf in Resources */,
 				2D1AE7CB1A4058DA00F111E6 /* LaunchScreen.xib in Resources */,
+				AD4416DE1A41D91D00F4EF5F /* Gotham-Black.otf in Resources */,
+				AD4416D91A41D91D00F4EF5F /* Gotham-BookItalic.otf in Resources */,
+				AD4416C51A41D91D00F4EF5F /* ProximaNova-Semibold.otf in Resources */,
+				AD4416D51A41D91D00F4EF5F /* Gotham-MediumItalic.otf in Resources */,
+				AD4416CA1A41D91D00F4EF5F /* ProximaNova-Light.otf in Resources */,
+				AD4416D11A41D91D00F4EF5F /* Gotham-UltraItalic.otf in Resources */,
+				AD4416C61A41D91D00F4EF5F /* ProximaNova-RegularItalic.otf in Resources */,
+				AD4416CC1A41D91D00F4EF5F /* ProximaNova-BoldIt.otf in Resources */,
+				AD4416C81A41D91D00F4EF5F /* ProximaNova-RegItalic.otf in Resources */,
+				AD4416D21A41D91D00F4EF5F /* Gotham-Ultra.otf in Resources */,
+				AD4416D31A41D91D00F4EF5F /* Gotham-ThinItalic.otf in Resources */,
 				2D1AE7C81A4058DA00F111E6 /* Images.xcassets in Resources */,
+				AD4416D81A41D91D00F4EF5F /* Gotham-Light.otf in Resources */,
+				AD4416CE1A41D91D00F4EF5F /* ProximaNova-Black.otf in Resources */,
+				AD4416D71A41D91D00F4EF5F /* Gotham-LightItalic.otf in Resources */,
+				AD4416DB1A41D91D00F4EF5F /* Gotham-BoldItalic.otf in Resources */,
+				AD4416C41A41D91D00F4EF5F /* ProximaNova-SemiboldItalic.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
