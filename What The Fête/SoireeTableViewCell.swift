@@ -13,6 +13,7 @@ class SoireeTableViewCell: UITableViewCell {
     @IBOutlet weak var soireeTitle: UILabel!
     @IBOutlet weak var soireeDescription: UILabel!
     @IBOutlet weak var soireeDate: UILabel!
+    @IBOutlet weak var soireeCoverpic: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -29,5 +30,15 @@ class SoireeTableViewCell: UITableViewCell {
         soireeTitle.text        = soiree.title
         soireeDescription.text  = soiree.soireeDescription
         soireeDate.text         = soiree.date
+        
+        
+        //Construct the imgUrl to get an image URL for the pages
+        let urlString: NSString = soiree.coverpic as NSString
+        var imgURL: NSURL       = NSURL(string: urlString)!
+        var imgData: NSData     = NSData(contentsOfURL: imgURL)!
+        
+        ///append each image into UIImage
+        soireeCoverpic.image    = UIImage(data: imgData)!
+        
     }
 }

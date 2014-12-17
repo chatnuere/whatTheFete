@@ -40,10 +40,10 @@ class HomeViewController: UIViewController, UITableViewDataSource {
             
             for soireeFromJSON in soireesFromJSON {
             
-                var title: AnyObject?       = soireeFromJSON["title"]
-                var description: AnyObject? = soireeFromJSON["description"]
-                var date: AnyObject?        = soireeFromJSON["date"]
-                var coverpic: AnyObject?    = soireeFromJSON["coverpic"]
+                var title: AnyObject!       = soireeFromJSON["title"]
+                var description: AnyObject! = soireeFromJSON["description"]
+                var date: AnyObject!        = soireeFromJSON["date"]
+                var coverpic: AnyObject!    = soireeFromJSON["coverpic"]
 
                 var soiree = Soiree(title: "\(title)", soireeDescription: "\(description)", date: "\(date)", coverpic: "\(coverpic)" )
                 self.soirees.append(soiree)
