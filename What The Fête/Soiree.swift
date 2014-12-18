@@ -10,18 +10,19 @@ import UIKit
 
 class Soiree: NSObject {
     
+    var soireeId:Int!
     var title:String!
     var soireeDescription:String!
     var date:String!
     var coverpic:String!
     
-    init(  title:String!, soireeDescription:String!, date:String!, coverpic:String! ) {
+    init( soireeId:Int!, title:String!, soireeDescription:String!, date:String!, coverpic:String! ) {
         
+        self.soireeId          = soireeId
         self.title             = title
         self.soireeDescription = soireeDescription
         self.date              = date
         self.coverpic          = coverpic
-
         
     }
 }

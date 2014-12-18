@@ -12,14 +12,17 @@ import Alamofire
 class HomeViewController: UIViewController, UITableViewDataSource {
     
     private var soirees:[Soiree]=[Soiree]()
+    private var peoples:[People]=[People]()
+    private var users:[User]=[User]()
+
     
     @IBOutlet weak var mainTableView: UITableView!
 
     
     
     
-    private let cellIdentifier                 = "soireeCellIdentifier"
-    private let detailVideoGameSegueIdentifier = "SingleSoireeSegueIdentifier"
+    private let cellIdentifier               = "soireeCellIdentifier"
+    private let detailSoireeSegueIdentifier  = "SingleSoireeSegueIdentifier"
     
     
     
@@ -35,23 +38,42 @@ class HomeViewController: UIViewController, UITableViewDataSource {
             var jsonObject = data as Dictionary<String,AnyObject>
             
             
+            /// prepare dictionaries to sort the JSON
             var soireesFromJSON = jsonObject["events"] as [Dictionary<String,AnyObject>]
+            var usersFromJSON   = jsonObject["users"]  as [Dictionary<String,AnyObject>]
+            var peoplesFromJSON = jsonObject["people"] as [Dictionary<String,AnyObject>]
             
+            /// adding users
+            for userFromJSON in usersFromJSON {
+                var id: AnyObject!         = userFromJSON["id"]
+                var firstname: AnyObject!  = userFromJSON["firstname"]
+                var lastname: AnyObject!   = userFromJSON["lastname"]
+                var pictureurl: AnyObject! = userFromJSON["pictureurl"]
+
+                var user = User(userId: Int(id as NSNumber), firstname: "\(firstname)", lastname: "\(lastname)", pictureurl: "\(pictureurl)")
+                self.users.append(user)
+            }
             
+            /// adding soirées
             for soireeFromJSON in soireesFromJSON {
-            
+                var id: AnyObject!          = soireeFromJSON["id"]
                 var title: AnyObject!       = soireeFromJSON["title"]
                 var description: AnyObject! = soireeFromJSON["description"]
                 var date: AnyObject!        = soireeFromJSON["date"]
                 var coverpic: AnyObject!    = soireeFromJSON["coverpic"]
-
-                var soiree = Soiree(title: "\(title)", soireeDescription: "\(description)", date: "\(date)", coverpic: "\(coverpic)" )
+                
+                var soiree = Soiree( soireeId: Int(id as NSNumber), title: "\(title)", soireeDescription: "\(description)", date: "\(date)", coverpic: "\(coverpic)" )
                 self.soirees.append(soiree)
+            }
+            
+            /// adding peoples
+                for peopleFromJSON in peoplesFromJSON {
+                var people_id: AnyObject! = peopleFromJSON["id"]
+                var user_id:   AnyObject! = peopleFromJSON["user_id"]
+                var event_id:  AnyObject! = peopleFromJSON["event_id"]
                 
-                //self.mainTableView.insertRowsAtIndexPaths([NSIndexPath(forRow: self.soirees.count-1, inSection: 0)], withRowAnimation: UITableViewRowAnimation.Top)
-
-                
-                
+                var people = People(people_id: Int(people_id as NSNumber), user_id: Int(user_id as NSNumber), event_id: Int(event_id as NSNumber))
+                self.peoples.append(people)
             }
             
             self.mainTableView.reloadData()
@@ -71,37 +93,23 @@ class HomeViewController: UIViewController, UITableViewDataSource {
         
         var segueIdentifier = segue.identifier
         
-        if segueIdentifier==detailVideoGameSegueIdentifier {
+        if segueIdentifier==detailSoireeSegueIdentifier {
             var detailSoireeViewController = segue.destinationViewController as DetailSoireeViewController
             
             if let indexRow = mainTableView.indexPathForSelectedRow()?.row {
-                detailSoireeViewController.soiree = soirees[indexRow]
+                detailSoireeViewController.soiree  = soirees[indexRow]
+                detailSoireeViewController.users   = users
+                detailSoireeViewController.peoples = peoples
             }
         }
         
     }
     
 
-    
-    
-    
-
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-    
     
     
     //MARK: - UITableView data source methods
