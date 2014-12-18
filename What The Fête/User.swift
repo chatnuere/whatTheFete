@@ -14,13 +14,15 @@ class User: NSObject {
     var firstname:String!
     var lastname:String!
     var pictureurl:String!
+    var user_title:String!
     
-    init(  userId:Int!, firstname:String!, lastname:String!, pictureurl:String! ) {
+    init(  userId:Int!, firstname:String!, lastname:String!, pictureurl:String! , user_title:String!) {
         
         self.userId     = userId
         self.firstname  = firstname
         self.lastname   = lastname
         self.pictureurl = pictureurl
+        self.user_title = user_title
         
     }
 

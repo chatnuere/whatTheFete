@@ -57,6 +57,10 @@ class DetailSoireeViewController: UIViewController , UITableViewDataSource {
         
         self.usersTableview.reloadData()
     }
+    
+    override func viewWillAppear(animated: Bool) {
+        self.usersTableview.reloadData()
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -72,9 +76,15 @@ class DetailSoireeViewController: UIViewController , UITableViewDataSource {
             var detailParticipatingUsersViewController = segue.destinationViewController as DetailParticipatingUsersViewController
             
             if let indexRow = usersTableview.indexPathForSelectedRow()?.row {
+                for people in peoples{
+                    if people.user_id == participatingUsers[indexRow].userId{
+                        detailParticipatingUsersViewController.people = people
+                    }
+                }
+                
                 detailParticipatingUsersViewController.user  = participatingUsers[indexRow]
                 detailParticipatingUsersViewController.soiree = soiree
-                detailParticipatingUsersViewController.peoples = peoples
+                
             }
         }
         
@@ -91,7 +101,7 @@ class DetailSoireeViewController: UIViewController , UITableViewDataSource {
         
         var cell:UserTableViewCell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier) as UserTableViewCell
         
-        cell.setUser(participatingUsers[indexPath.row])
+        cell.setUser(participatingUsers[indexPath.row], peoples: peoples)
         
         return cell
     }
