@@ -18,13 +18,13 @@
 		2D6839BF1A421F7E003F2497 /* People.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6839BE1A421F7E003F2497 /* People.swift */; };
 		2D6839C11A422ADC003F2497 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6839C01A422ADC003F2497 /* UserTableViewCell.swift */; };
 		2D6839C31A4233DB003F2497 /* DetailParticipatingUsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6839C21A4233DB003F2497 /* DetailParticipatingUsersViewController.swift */; };
+		2D6D55DF1A438A3100F65502 /* AddSoireeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6D55DE1A438A3100F65502 /* AddSoireeViewController.swift */; };
 		2D7EE2231A434EAF0068E059 /* Rating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7EE2221A434EAF0068E059 /* Rating.swift */; };
 		2D7EE2261A4351640068E059 /* Skill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7EE2251A4351640068E059 /* Skill.swift */; };
 		2D9507F41A40C54600B011A5 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AD5E686C1A40918E00FBF012 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2DA27C521A40D579002B3AF8 /* Soiree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA27C511A40D579002B3AF8 /* Soiree.swift */; };
 		2DA27C551A40D80F002B3AF8 /* SoireeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA27C541A40D80F002B3AF8 /* SoireeTableViewCell.swift */; };
 		2DA27C571A41765E002B3AF8 /* DetailSoireeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA27C561A41765E002B3AF8 /* DetailSoireeViewController.swift */; };
-		2DA27C5A1A417E04002B3AF8 /* AddSoireeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA27C591A417E04002B3AF8 /* AddSoireeViewController.swift */; };
 		2DCFD5301A4087BF006E0732 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DCFD52F1A4087BF006E0732 /* HomeViewController.swift */; };
 		AD4416C41A41D91D00F4EF5F /* ProximaNova-SemiboldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = AD4416A91A41D91D00F4EF5F /* ProximaNova-SemiboldItalic.otf */; };
 		AD4416C51A41D91D00F4EF5F /* ProximaNova-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = AD4416AA1A41D91D00F4EF5F /* ProximaNova-Semibold.otf */; };
@@ -118,12 +118,12 @@
 		2D6839BE1A421F7E003F2497 /* People.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = People.swift; sourceTree = "<group>"; };
 		2D6839C01A422ADC003F2497 /* UserTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
 		2D6839C21A4233DB003F2497 /* DetailParticipatingUsersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailParticipatingUsersViewController.swift; sourceTree = "<group>"; };
+		2D6D55DE1A438A3100F65502 /* AddSoireeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddSoireeViewController.swift; sourceTree = "<group>"; };
 		2D7EE2221A434EAF0068E059 /* Rating.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rating.swift; sourceTree = "<group>"; };
 		2D7EE2251A4351640068E059 /* Skill.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Skill.swift; sourceTree = "<group>"; };
 		2DA27C511A40D579002B3AF8 /* Soiree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Soiree.swift; sourceTree = "<group>"; };
 		2DA27C541A40D80F002B3AF8 /* SoireeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoireeTableViewCell.swift; sourceTree = "<group>"; };
 		2DA27C561A41765E002B3AF8 /* DetailSoireeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailSoireeViewController.swift; sourceTree = "<group>"; };
-		2DA27C591A417E04002B3AF8 /* AddSoireeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddSoireeViewController.swift; sourceTree = "<group>"; };
 		2DCFD52F1A4087BF006E0732 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		AD4416A91A41D91D00F4EF5F /* ProximaNova-SemiboldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "ProximaNova-SemiboldItalic.otf"; path = "../../../../../Google Drive/WTF-H4/Assets/FONTS/PROXIMA-NOVA/ProximaNova-SemiboldItalic.otf"; sourceTree = "<group>"; };
 		AD4416AA1A41D91D00F4EF5F /* ProximaNova-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "ProximaNova-Semibold.otf"; path = "../../../../../Google Drive/WTF-H4/Assets/FONTS/PROXIMA-NOVA/ProximaNova-Semibold.otf"; sourceTree = "<group>"; };
@@ -199,6 +199,7 @@
 			isa = PBXGroup;
 			children = (
 				AD4416A71A41D8DA00F4EF5F /* Fonts */,
+				2D6D55DE1A438A3100F65502 /* AddSoireeViewController.swift */,
 				2D1AE7C01A4058DA00F111E6 /* AppDelegate.swift */,
 				2D1AE7C21A4058DA00F111E6 /* FbLoginViewController.swift */,
 				2DA27C511A40D579002B3AF8 /* Soiree.swift */,
@@ -209,7 +210,6 @@
 				2DA27C541A40D80F002B3AF8 /* SoireeTableViewCell.swift */,
 				2D6839C01A422ADC003F2497 /* UserTableViewCell.swift */,
 				2D1AE7E81A405EFF00F111E6 /* Bridge-Header.h */,
-				2DA27C591A417E04002B3AF8 /* AddSoireeViewController.swift */,
 				2D6839BE1A421F7E003F2497 /* People.swift */,
 				2D1AE7C41A4058DA00F111E6 /* Main.storyboard */,
 				2DA27C561A41765E002B3AF8 /* DetailSoireeViewController.swift */,
@@ -453,8 +453,8 @@
 				2D7EE2261A4351640068E059 /* Skill.swift in Sources */,
 				2D6839C31A4233DB003F2497 /* DetailParticipatingUsersViewController.swift in Sources */,
 				2D15CA771A430BA900A7A5CC /* ParticipatingUser.swift in Sources */,
-				2DA27C5A1A417E04002B3AF8 /* AddSoireeViewController.swift in Sources */,
 				2DA27C521A40D579002B3AF8 /* Soiree.swift in Sources */,
+				2D6D55DF1A438A3100F65502 /* AddSoireeViewController.swift in Sources */,
 				2DCFD5301A4087BF006E0732 /* HomeViewController.swift in Sources */,
 				2D7EE2231A434EAF0068E059 /* Rating.swift in Sources */,
 			);
