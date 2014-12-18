@@ -44,7 +44,7 @@ class UserTableViewCell: UITableViewCell {
         
         // loking for the mark
         for people in peoples {
-            if people.event_id == user.userId && people.mark != "null" {
+            if people.user_id == user.userId && people.mark != "null" {
                 peopleRatingText.text = people.mark
                 peopleRatinView.backgroundColor = UIColor(red: 0.207843, green: 0.403922, blue: 0.988235, alpha: 1)
             }

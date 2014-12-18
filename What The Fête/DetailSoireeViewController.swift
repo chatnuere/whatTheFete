@@ -72,9 +72,15 @@ class DetailSoireeViewController: UIViewController , UITableViewDataSource {
             var detailParticipatingUsersViewController = segue.destinationViewController as DetailParticipatingUsersViewController
             
             if let indexRow = usersTableview.indexPathForSelectedRow()?.row {
+                for people in peoples{
+                    if people.user_id == participatingUsers[indexRow].userId{
+                        detailParticipatingUsersViewController.people = people
+                    }
+                }
+                
                 detailParticipatingUsersViewController.user  = participatingUsers[indexRow]
                 detailParticipatingUsersViewController.soiree = soiree
-                detailParticipatingUsersViewController.peoples = peoples
+                
             }
         }
         

@@ -12,7 +12,7 @@ class DetailParticipatingUsersViewController: UIViewController {
     
     var user:User!
     var soiree:Soiree!
-    var peoples:[People]=[People]()
+    var people:People!
     
     func applyBlurEffect(image: UIImage){
         var imageToBlur = CIImage(image: image)
@@ -53,6 +53,8 @@ class DetailParticipatingUsersViewController: UIViewController {
         soireeDate.text        = soiree.date
         
         
+        println(people.people_id)
+        
         
         //Construct the imgUrl to get an image URL for the pages
         let bacgroundSoireeCoverPicurlString: NSString = soiree.coverpic as NSString
@@ -77,6 +79,14 @@ class DetailParticipatingUsersViewController: UIViewController {
 
 
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        if people.mark == "null"{
+            ratingWrappingView.hidden = false
+        }else{
+            ratingWrappingView.hidden = true
+        }
     }
 
     override func didReceiveMemoryWarning() {
