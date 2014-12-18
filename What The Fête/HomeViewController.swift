@@ -49,8 +49,9 @@ class HomeViewController: UIViewController, UITableViewDataSource {
                 var firstname: AnyObject!  = userFromJSON["firstname"]
                 var lastname: AnyObject!   = userFromJSON["lastname"]
                 var pictureurl: AnyObject! = userFromJSON["pictureurl"]
+                var user_title: AnyObject! = userFromJSON["user_title"]
 
-                var user = User(userId: Int(id as NSNumber), firstname: "\(firstname)", lastname: "\(lastname)", pictureurl: "\(pictureurl)")
+                var user = User(userId: Int(id as NSNumber), firstname: "\(firstname)", lastname: "\(lastname)", pictureurl: "\(pictureurl)", user_title:"\(user_title)")
                 self.users.append(user)
             }
             
@@ -71,8 +72,9 @@ class HomeViewController: UIViewController, UITableViewDataSource {
                 var people_id: AnyObject! = peopleFromJSON["id"]
                 var user_id:   AnyObject! = peopleFromJSON["user_id"]
                 var event_id:  AnyObject! = peopleFromJSON["event_id"]
+                var mark:      AnyObject! = peopleFromJSON["mark"]
                 
-                var people = People(people_id: Int(people_id as NSNumber), user_id: Int(user_id as NSNumber), event_id: Int(event_id as NSNumber))
+                    var people = People(people_id: Int(people_id as NSNumber), user_id: Int(user_id as NSNumber), event_id: Int(event_id as NSNumber), mark: "\(mark)")
                 self.peoples.append(people)
             }
             

@@ -91,7 +91,7 @@ class DetailSoireeViewController: UIViewController , UITableViewDataSource {
         
         var cell:UserTableViewCell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier) as UserTableViewCell
         
-        cell.setUser(participatingUsers[indexPath.row])
+        cell.setUser(participatingUsers[indexPath.row], peoples: peoples)
         
         return cell
     }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D15CA771A430BA900A7A5CC /* ParticipatingUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D15CA761A430BA800A7A5CC /* ParticipatingUser.swift */; };
 		2D1AE7C11A4058DA00F111E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1AE7C01A4058DA00F111E6 /* AppDelegate.swift */; };
 		2D1AE7C31A4058DA00F111E6 /* FbLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1AE7C21A4058DA00F111E6 /* FbLoginViewController.swift */; };
 		2D1AE7C61A4058DA00F111E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D1AE7C41A4058DA00F111E6 /* Main.storyboard */; };
@@ -99,6 +100,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2D15CA761A430BA800A7A5CC /* ParticipatingUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParticipatingUser.swift; sourceTree = "<group>"; };
 		2D1AE7BB1A4058DA00F111E6 /* What The Fête.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "What The Fête.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D1AE7BF1A4058DA00F111E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2D1AE7C01A4058DA00F111E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -197,6 +199,7 @@
 				2D1AE7C21A4058DA00F111E6 /* FbLoginViewController.swift */,
 				2DA27C511A40D579002B3AF8 /* Soiree.swift */,
 				2D6839BB1A421B3F003F2497 /* User.swift */,
+				2D15CA761A430BA800A7A5CC /* ParticipatingUser.swift */,
 				2DA27C541A40D80F002B3AF8 /* SoireeTableViewCell.swift */,
 				2D6839C01A422ADC003F2497 /* UserTableViewCell.swift */,
 				2D1AE7E81A405EFF00F111E6 /* Bridge-Header.h */,
@@ -442,6 +445,7 @@
 				2D6839BF1A421F7E003F2497 /* People.swift in Sources */,
 				2D6839BC1A421B3F003F2497 /* User.swift in Sources */,
 				2D6839C31A4233DB003F2497 /* DetailParticipatingUsersViewController.swift in Sources */,
+				2D15CA771A430BA900A7A5CC /* ParticipatingUser.swift in Sources */,
 				2DA27C5A1A417E04002B3AF8 /* AddSoireeViewController.swift in Sources */,
 				2DA27C521A40D579002B3AF8 /* Soiree.swift in Sources */,
 				2DCFD5301A4087BF006E0732 /* HomeViewController.swift in Sources */,
