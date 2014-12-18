@@ -31,6 +31,9 @@
                             <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tHr-fZ-brs" customClass="FBLoginView">
                                 <rect key="frame" x="200" y="428" width="200" height="100"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="100" y="628" width="200" height="100"/>
+                                </variation>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -388,6 +391,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="background" width="245" height="341"/>
+        <image name="background" width="750" height="1334"/>
     </resources>
 </document>
