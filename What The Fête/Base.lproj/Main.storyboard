@@ -488,12 +488,144 @@
                     <view key="view" contentMode="scaleToFill" id="wjn-Vj-gVz">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Thc-hZ-1ay">
+                                <rect key="frame" x="0.0" y="64" width="600" height="130"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mtr-nI-QWl">
+                                        <rect key="frame" x="257" y="23" width="85" height="85"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aIs-JB-Rng">
+                                        <rect key="frame" x="-10" y="-15" width="620" height="160"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fdv-BR-X8x">
+                                <rect key="frame" x="0.0" y="195" width="600" height="405"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qh9-a1-Uw8">
+                                        <rect key="frame" x="25" y="100" width="550" height="304"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fGg-vo-nfH">
+                                                <rect key="frame" x="0.0" y="0.0" width="110" height="10"/>
+                                                <color key="backgroundColor" red="1" green="0.20241638780000001" blue="0.50075851250000003" alpha="1" colorSpace="calibratedRGB"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JFs-nO-G9z">
+                                                <rect key="frame" x="110" y="0.0" width="110" height="10"/>
+                                                <color key="backgroundColor" red="0.13333334029999999" green="0.1294117719" blue="0.11372549830000001" alpha="1" colorSpace="deviceRGB"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BOE-IC-6va">
+                                                <rect key="frame" x="220" y="0.0" width="110" height="10"/>
+                                                <color key="backgroundColor" red="0.1019607843" green="0.21960784310000001" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nJi-AZ-q82">
+                                                <rect key="frame" x="330" y="0.0" width="110" height="10"/>
+                                                <color key="backgroundColor" red="1" green="0.46373493970000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ahv-WF-TIG">
+                                                <rect key="frame" x="440" y="0.0" width="110" height="10"/>
+                                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Eld-sU-4rt">
+                                                <rect key="frame" x="0.0" y="10" width="550" height="590"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="titreSkill" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3uk-bb-NAD">
+                                                        <rect key="frame" x="8" y="8" width="86" height="30"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Description Skill" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gwS-ls-0PR">
+                                                        <rect key="frame" x="5" y="46" width="540" height="21"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="/5" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qbN-bv-GOD">
+                                                        <rect key="frame" x="528" y="8" width="16" height="21"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" red="0.28749173280423279" green="0.28749173280423279" blue="0.28749173280423279" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3An-I6-zYW">
+                                                        <rect key="frame" x="516" y="8" width="10" height="21"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BgA-O2-fZ6">
+                                                        <rect key="frame" x="0.0" y="75" width="550" height="120"/>
+                                                    </imageView>
+                                                    <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="5" minValue="0.0" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="Dfv-sY-Rdv">
+                                                        <rect key="frame" x="10" y="205" width="530" height="31"/>
+                                                    </slider>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3mD-Zb-PG5">
+                                                        <rect key="frame" x="243" y="243" width="65" height="30"/>
+                                                        <state key="normal" title="Next Skill">
+                                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SIN-bT-gDo">
+                                        <rect key="frame" x="80" y="0.0" width="440" height="100"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="description" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F9P-rm-BGc">
+                                                <rect key="frame" x="0.0" y="44" width="440" height="44"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="date" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JE5-7T-gKj">
+                                                <rect key="frame" x="398" y="14" width="34" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="titre" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xCH-t9-K7u">
+                                                <rect key="frame" x="0.0" y="8" width="38" height="28"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="RatingSlider" destination="Dfv-sY-Rdv" id="JJg-OU-WR8"/>
+                        <outlet property="bacgroundSoireeCoverPic" destination="aIs-JB-Rng" id="dp9-a7-f9I"/>
+                        <outlet property="currentFriendProfilePic" destination="mtr-nI-QWl" id="5Yc-rg-22t"/>
+                        <outlet property="ratinSkillImg" destination="BgA-O2-fZ6" id="7Iu-nw-Oj9"/>
+                        <outlet property="ratingInsideView" destination="Eld-sU-4rt" id="K6X-ed-YWh"/>
+                        <outlet property="ratingNextSkillButton" destination="3mD-Zb-PG5" id="shA-H0-iWM"/>
+                        <outlet property="ratingSkillDescription" destination="gwS-ls-0PR" id="c5E-Fc-oRu"/>
+                        <outlet property="ratingSkillId" destination="3An-I6-zYW" id="sat-l8-WmY"/>
+                        <outlet property="ratingSkillTitle" destination="3uk-bb-NAD" id="B9x-mQ-AcF"/>
+                        <outlet property="ratingWrappingView" destination="qh9-a1-Uw8" id="Gdu-eu-dRk"/>
+                        <outlet property="skill1colorView" destination="fGg-vo-nfH" id="OgC-zH-YC6"/>
+                        <outlet property="skill2colorView" destination="JFs-nO-G9z" id="Qkr-Ht-xyH"/>
+                        <outlet property="skill3colorView" destination="BOE-IC-6va" id="mD9-oj-6Q1"/>
+                        <outlet property="skill4colorView" destination="nJi-AZ-q82" id="O4V-tu-2bL"/>
+                        <outlet property="skill5colorView" destination="ahv-WF-TIG" id="5QC-Ml-UOH"/>
+                        <outlet property="soireeDate" destination="JE5-7T-gKj" id="dCZ-CU-kwn"/>
+                        <outlet property="soireeDescription" destination="F9P-rm-BGc" id="EaF-su-Nal"/>
+                        <outlet property="soireeTitle" destination="xCH-t9-K7u" id="9Pt-US-yZB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0BP-pR-oVj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3683" y="234"/>
+            <point key="canvasLocation" x="3641" y="234"/>
         </scene>
     </scenes>
     <resources>
