@@ -658,9 +658,26 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Thc-hZ-1ay">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="203"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mtr-nI-QWl"/>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aIs-JB-Rng"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aIs-JB-Rng">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="203"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mtr-nI-QWl">
+                                        <rect key="frame" x="250" y="52" width="100" height="100"/>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fHO-EP-OCm">
+                                        <rect key="frame" x="275" y="127" width="50" height="51"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="note" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MB1-Ig-0hH">
+                                                <rect key="frame" x="8" y="15" width="34" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
@@ -714,13 +731,16 @@
                                                     </label>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BgA-O2-fZ6"/>
                                                     <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="5" minValue="0.0" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="Dfv-sY-Rdv">
-                                                        <rect key="frame" x="10" y="205" width="530" height="31"/>
+                                                        <rect key="frame" x="10" y="109" width="530" height="31"/>
                                                     </slider>
                                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3mD-Zb-PG5">
-                                                        <rect key="frame" x="243" y="243" width="65" height="30"/>
+                                                        <rect key="frame" x="243" y="187" width="65" height="30"/>
                                                         <state key="normal" title="Next Skill">
                                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="nextSkillAction:" destination="Z3N-3z-oZq" eventType="touchUpInside" id="Aj2-Xh-MEQ"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -752,6 +772,78 @@
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a7J-R0-Lgf">
+                                        <rect key="frame" x="25" y="100" width="550" height="241"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Titre" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KMD-ck-UXm">
+                                                <rect key="frame" x="254" y="17" width="34" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="dance" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iXA-md-POZ">
+                                                <rect key="frame" x="28" y="60" width="48" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="alcool" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Kz-zM-O7C">
+                                                <rect key="frame" x="28" y="110" width="46" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="swag" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2la-pi-N5B">
+                                                <rect key="frame" x="28" y="158" width="41" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="vannes" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q1Q-Y2-3Cp">
+                                                <rect key="frame" x="297" y="60" width="55" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="sex-appeal" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1sS-Po-Dfp">
+                                                <rect key="frame" x="297" y="110" width="86" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="noteAlcool" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W8y-Hg-Wwf">
+                                                <rect key="frame" x="82" y="110" width="82" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="noteSwag" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6fc-WS-qNi">
+                                                <rect key="frame" x="84" y="158" width="78" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="noteVannes" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VKz-NS-jT4">
+                                                <rect key="frame" x="367" y="60" width="90" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="noteSex" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ym7-Ck-AMx">
+                                                <rect key="frame" x="391" y="110" width="64" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="noteDance" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ire-Rv-sqz">
+                                                <rect key="frame" x="82" y="60" width="84" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
@@ -762,6 +854,13 @@
                         <outlet property="RatingSlider" destination="Dfv-sY-Rdv" id="JJg-OU-WR8"/>
                         <outlet property="bacgroundSoireeCoverPic" destination="aIs-JB-Rng" id="dp9-a7-f9I"/>
                         <outlet property="currentFriendProfilePic" destination="mtr-nI-QWl" id="5Yc-rg-22t"/>
+                        <outlet property="headerNoteView" destination="fHO-EP-OCm" id="xBh-m9-uDb"/>
+                        <outlet property="headerNotelabel" destination="MB1-Ig-0hH" id="FuP-bV-YWI"/>
+                        <outlet property="noteAlcool" destination="W8y-Hg-Wwf" id="1KI-OY-P9V"/>
+                        <outlet property="noteDance" destination="ire-Rv-sqz" id="DXe-ce-TYp"/>
+                        <outlet property="noteSwag" destination="6fc-WS-qNi" id="4UT-Pf-a2L"/>
+                        <outlet property="noteVannes" destination="VKz-NS-jT4" id="d2b-lk-Ta3"/>
+                        <outlet property="notesex" destination="ym7-Ck-AMx" id="2G1-tq-x0I"/>
                         <outlet property="ratinSkillImg" destination="BgA-O2-fZ6" id="7Iu-nw-Oj9"/>
                         <outlet property="ratingInsideView" destination="Eld-sU-4rt" id="K6X-ed-YWh"/>
                         <outlet property="ratingNextSkillButton" destination="3mD-Zb-PG5" id="shA-H0-iWM"/>
@@ -769,6 +868,7 @@
                         <outlet property="ratingSkillId" destination="3An-I6-zYW" id="sat-l8-WmY"/>
                         <outlet property="ratingSkillTitle" destination="3uk-bb-NAD" id="B9x-mQ-AcF"/>
                         <outlet property="ratingWrappingView" destination="qh9-a1-Uw8" id="Gdu-eu-dRk"/>
+                        <outlet property="reportWrappingView" destination="a7J-R0-Lgf" id="kjJ-Nq-cUb"/>
                         <outlet property="skill1colorView" destination="fGg-vo-nfH" id="OgC-zH-YC6"/>
                         <outlet property="skill2colorView" destination="JFs-nO-G9z" id="Qkr-Ht-xyH"/>
                         <outlet property="skill3colorView" destination="BOE-IC-6va" id="mD9-oj-6Q1"/>
@@ -777,6 +877,7 @@
                         <outlet property="soireeDate" destination="JE5-7T-gKj" id="dCZ-CU-kwn"/>
                         <outlet property="soireeDescription" destination="F9P-rm-BGc" id="EaF-su-Nal"/>
                         <outlet property="soireeTitle" destination="xCH-t9-K7u" id="9Pt-US-yZB"/>
+                        <outlet property="titreReportMark" destination="KMD-ck-UXm" id="AT4-Dg-V6E"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0BP-pR-oVj" userLabel="First Responder" sceneMemberID="firstResponder"/>
