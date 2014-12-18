@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -9,8 +9,19 @@
         <mutableArray key="Gotham-Bold.otf">
             <string>Gotham-Bold</string>
         </mutableArray>
+        <mutableArray key="ProximaNova-Bold.otf">
+            <string>ProximaNova-Bold</string>
+            <string>ProximaNova-Bold</string>
+            <string>ProximaNova-Bold</string>
+            <string>ProximaNova-Bold</string>
+        </mutableArray>
         <mutableArray key="ProximaNova-Light.otf">
             <string>ProximaNova-Light</string>
+            <string>ProximaNova-Light</string>
+            <string>ProximaNova-Light</string>
+        </mutableArray>
+        <mutableArray key="ProximaNova-Regular.otf">
+            <string>ProximaNova-Regular</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -26,26 +37,152 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="Vnm-ch-9hq">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loginBackground" translatesAutoresizingMaskIntoConstraints="NO" id="Vnm-ch-9hq">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
                             <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tHr-fZ-brs" customClass="FBLoginView">
                                 <rect key="frame" x="200" y="428" width="200" height="100"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
-                                    <rect key="frame" x="100" y="628" width="200" height="100"/>
+                                    <rect key="frame" x="100" y="588" width="200" height="100"/>
                                 </variation>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CnM-eo-9hV">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="12"/>
+                                <state key="normal" title="Termes">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wbY-6l-4ex">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="12"/>
+                                <state key="normal" title="Conditons">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="et" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D5H-AY-oAm">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="ProximaNova-Light" family="Proxima Nova" pointSize="12"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Petit Jugement entre amis !" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PpV-QP-Crm">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="16"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What The Fête ?!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hMG-C1-UMh">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="16"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nous respectons votre vie privée." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zih-fs-3zo">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="ProximaNova-Light" family="Proxima Nova" pointSize="12"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0vw-Wv-RYl">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="12"/>
+                                <state key="normal" title="Pourquoi Facebook">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="tHr-fZ-brs" secondAttribute="centerX" id="0fy-lW-msw"/>
+                            <constraint firstItem="D5H-AY-oAm" firstAttribute="top" secondItem="Vnm-ch-9hq" secondAttribute="bottom" constant="-38" id="39n-6O-QDv"/>
+                            <constraint firstItem="PpV-QP-Crm" firstAttribute="centerX" secondItem="Vnm-ch-9hq" secondAttribute="centerX" constant="65.5" id="3aj-Ms-xqq"/>
+                            <constraint firstItem="D5H-AY-oAm" firstAttribute="leading" secondItem="CnM-eo-9hV" secondAttribute="trailing" constant="8" id="4G1-x8-NZl">
+                                <variation key="heightClass=regular-widthClass=compact" constant="5"/>
+                            </constraint>
                             <constraint firstItem="Vnm-ch-9hq" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="Aa7-3i-Ejr"/>
+                            <constraint firstItem="wbY-6l-4ex" firstAttribute="centerX" secondItem="Vnm-ch-9hq" secondAttribute="centerX" constant="30" id="HOd-Gh-Afo"/>
                             <constraint firstItem="Vnm-ch-9hq" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="Ifp-WW-ukE"/>
+                            <constraint firstItem="hMG-C1-UMh" firstAttribute="top" secondItem="Vnm-ch-9hq" secondAttribute="bottom" constant="-319" id="NNM-Zv-LMw">
+                                <variation key="heightClass=regular-widthClass=compact" constant="-316"/>
+                            </constraint>
+                            <constraint firstItem="0vw-Wv-RYl" firstAttribute="top" secondItem="Vnm-ch-9hq" secondAttribute="bottom" constant="-63" id="Phe-aw-1cF"/>
+                            <constraint firstItem="wbY-6l-4ex" firstAttribute="leading" secondItem="D5H-AY-oAm" secondAttribute="trailing" constant="8" id="Qdg-OK-cYj">
+                                <variation key="heightClass=regular-widthClass=compact" constant="4"/>
+                            </constraint>
                             <constraint firstItem="Vnm-ch-9hq" firstAttribute="bottom" secondItem="2fi-mo-0CV" secondAttribute="top" id="Tku-k0-0ZR"/>
+                            <constraint firstItem="PpV-QP-Crm" firstAttribute="top" secondItem="Vnm-ch-9hq" secondAttribute="bottom" constant="-316" id="b1y-Hj-DgB"/>
+                            <constraint firstItem="wbY-6l-4ex" firstAttribute="top" secondItem="Vnm-ch-9hq" secondAttribute="bottom" constant="-44" id="fAY-T5-DnF"/>
+                            <constraint firstItem="0vw-Wv-RYl" firstAttribute="centerX" secondItem="Vnm-ch-9hq" secondAttribute="centerX" constant="89" id="gsJ-3g-h5y"/>
+                            <constraint firstItem="Zih-fs-3zo" firstAttribute="top" secondItem="Vnm-ch-9hq" secondAttribute="bottom" constant="-57" id="mhD-20-sA1"/>
+                            <constraint firstItem="Zih-fs-3zo" firstAttribute="centerX" secondItem="Vnm-ch-9hq" secondAttribute="centerX" constant="-53.75" id="sfe-sK-lQy"/>
+                            <constraint firstItem="PpV-QP-Crm" firstAttribute="leading" secondItem="hMG-C1-UMh" secondAttribute="trailing" constant="-6" id="uYJ-Ar-v4Y">
+                                <variation key="heightClass=regular-widthClass=compact" constant="4"/>
+                            </constraint>
                             <constraint firstItem="Vnm-ch-9hq" firstAttribute="centerX" secondItem="tHr-fZ-brs" secondAttribute="centerX" id="ua4-wP-9Xe"/>
-                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="tHr-fZ-brs" secondAttribute="bottom" constant="72" id="v1Y-T9-5OL"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="tHr-fZ-brs" secondAttribute="bottom" constant="72" id="v1Y-T9-5OL">
+                                <variation key="heightClass=regular-widthClass=compact" constant="112"/>
+                            </constraint>
+                            <constraint firstItem="CnM-eo-9hV" firstAttribute="top" secondItem="Vnm-ch-9hq" secondAttribute="bottom" constant="-44" id="wn3-vy-B6y"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="CnM-eo-9hV"/>
+                                <exclude reference="wbY-6l-4ex"/>
+                                <exclude reference="D5H-AY-oAm"/>
+                                <exclude reference="PpV-QP-Crm"/>
+                                <exclude reference="hMG-C1-UMh"/>
+                                <exclude reference="Zih-fs-3zo"/>
+                                <exclude reference="0vw-Wv-RYl"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="NNM-Zv-LMw"/>
+                                <exclude reference="3aj-Ms-xqq"/>
+                                <exclude reference="b1y-Hj-DgB"/>
+                                <exclude reference="uYJ-Ar-v4Y"/>
+                                <exclude reference="mhD-20-sA1"/>
+                                <exclude reference="sfe-sK-lQy"/>
+                                <exclude reference="wn3-vy-B6y"/>
+                                <exclude reference="Phe-aw-1cF"/>
+                                <exclude reference="gsJ-3g-h5y"/>
+                                <exclude reference="HOd-Gh-Afo"/>
+                                <exclude reference="Qdg-OK-cYj"/>
+                                <exclude reference="fAY-T5-DnF"/>
+                                <exclude reference="39n-6O-QDv"/>
+                                <exclude reference="4G1-x8-NZl"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="CnM-eo-9hV"/>
+                                <include reference="wbY-6l-4ex"/>
+                                <include reference="D5H-AY-oAm"/>
+                                <include reference="PpV-QP-Crm"/>
+                                <include reference="hMG-C1-UMh"/>
+                                <include reference="Zih-fs-3zo"/>
+                                <include reference="0vw-Wv-RYl"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="NNM-Zv-LMw"/>
+                                <include reference="3aj-Ms-xqq"/>
+                                <include reference="b1y-Hj-DgB"/>
+                                <include reference="uYJ-Ar-v4Y"/>
+                                <include reference="mhD-20-sA1"/>
+                                <include reference="sfe-sK-lQy"/>
+                                <include reference="wn3-vy-B6y"/>
+                                <include reference="Phe-aw-1cF"/>
+                                <include reference="gsJ-3g-h5y"/>
+                                <include reference="HOd-Gh-Afo"/>
+                                <include reference="Qdg-OK-cYj"/>
+                                <include reference="fAY-T5-DnF"/>
+                                <include reference="39n-6O-QDv"/>
+                                <include reference="4G1-x8-NZl"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="fbLoginView" destination="tHr-fZ-brs" id="xEq-IW-y0F"/>
@@ -500,6 +637,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="background" width="750" height="1334"/>
+        <image name="loginBackground" width="750" height="1334"/>
     </resources>
 </document>
