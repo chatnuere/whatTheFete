@@ -17,6 +17,7 @@ class DetailParticipatingUsersViewController: UIViewController {
     var skills:[Skill]=[Skill]()
     var step = 0
     var mark:Float!
+    private let backToDetailSoireeSegueIndentifier  = "backToDetailSoireeSegueIndentifier"
     
     
 
@@ -187,6 +188,7 @@ class DetailParticipatingUsersViewController: UIViewController {
             people.markDrague = "\(Int(rating.women))"
             people.markStyle  = "\(Int(rating.swag))"
             people.markVanne  = "\(Int(rating.fun))"
+            viewWillAppear(true)
 
         default:
             true
