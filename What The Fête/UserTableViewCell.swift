@@ -12,9 +12,6 @@ class UserTableViewCell: UITableViewCell {
 
     @IBOutlet weak var userNameLabel: UILabel!
     @IBOutlet weak var userPicture: UIImageView!
-    @IBOutlet weak var userTitle: UILabel!
-    @IBOutlet weak var peopleRatinView: UIView!
-    @IBOutlet weak var peopleRatingText: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -27,9 +24,8 @@ class UserTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
 
-    func setUser(user:User, peoples:[People]=[People]()) {
-        userNameLabel.text      = "\(user.firstname) \(user.lastname)"
-        userTitle.text          = user.user_title
+    func setUser(user:User) {
+        userNameLabel.text        = "\(user.firstname) \(user.lastname)"
         
         
         //Construct the imgUrl to get an image URL for the pages
@@ -39,18 +35,6 @@ class UserTableViewCell: UITableViewCell {
         
         ///append each image into UIImage
         userPicture.image    = UIImage(data: imgData)!
-        
-        
-        
-        // loking for the mark
-        for people in peoples {
-            if people.user_id == user.userId && people.mark != "null" {
-                peopleRatingText.text = people.mark
-                peopleRatinView.backgroundColor = UIColor(red: 0.207843, green: 0.403922, blue: 0.988235, alpha: 1)
-            }
-        }
-        
-        
         
     }
     
