@@ -2,16 +2,18 @@
   "images" : [
     {
       "idiom" : "universal",
-      "scale" : "1x"
+      "scale" : "1x",
+      "filename" : "Login_bg.png"
     },
     {
       "idiom" : "universal",
-      "scale" : "2x"
+      "scale" : "2x",
+      "filename" : "Login_bg-x2.png"
     },
     {
       "idiom" : "universal",
       "scale" : "3x",
-      "filename" : "Lauch-screen-x3.png"
+      "filename" : "Login_bg-x3.png"
     }
   ],
   "info" : {
