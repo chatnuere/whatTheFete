@@ -518,7 +518,7 @@
                         <viewControllerLayoutGuide type="bottom" id="sDH-Mq-Vml"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="fnQ-cZ-JnQ">
-                        <rect key="frame" x="0.0" y="64" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H1O-S0-O0z">
@@ -654,7 +654,7 @@
                         <viewControllerLayoutGuide type="bottom" id="rkI-uV-vcj"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="wjn-Vj-gVz">
-                        <rect key="frame" x="0.0" y="64" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Thc-hZ-1ay">
@@ -878,7 +878,6 @@
                         <outlet property="soireeDescription" destination="F9P-rm-BGc" id="EaF-su-Nal"/>
                         <outlet property="soireeTitle" destination="xCH-t9-K7u" id="9Pt-US-yZB"/>
                         <outlet property="titreReportMark" destination="KMD-ck-UXm" id="AT4-Dg-V6E"/>
-                        <segue destination="c3d-OH-BM6" kind="show" identifier="backToDetailSoireeSegueIndentifier" id="pEM-NQ-76z"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0BP-pR-oVj" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -890,7 +889,4 @@
         <image name="addButton" width="59" height="59"/>
         <image name="loginBackground" width="750" height="1334"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="pEM-NQ-76z"/>
-    </inferredMetricsTieBreakers>
 </document>

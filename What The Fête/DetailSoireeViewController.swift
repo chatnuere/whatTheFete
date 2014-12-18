@@ -57,6 +57,10 @@ class DetailSoireeViewController: UIViewController , UITableViewDataSource {
         
         self.usersTableview.reloadData()
     }
+    
+    override func viewWillAppear(animated: Bool) {
+        self.usersTableview.reloadData()
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

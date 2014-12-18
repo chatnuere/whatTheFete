@@ -34,7 +34,7 @@ class HomeViewController: UIViewController, UITableViewDataSource {
         
         //http://dugue.today/soiree.json
         //https://www.dropbox.com/s/pimp87dtgn2wdae/wtf.json?dl=1
-        Alamofire.request(.GET, "http://dugue.today/soiree.json", parameters: nil, encoding: ParameterEncoding.URL).responseJSON { (urlRequest:NSURLRequest, response:NSHTTPURLResponse?, data:AnyObject?, error:NSError?) -> Void in
+        Alamofire.request(.GET, "https://www.dropbox.com/s/pimp87dtgn2wdae/wtf.json?dl=1", parameters: nil, encoding: ParameterEncoding.URL).responseJSON { (urlRequest:NSURLRequest, response:NSHTTPURLResponse?, data:AnyObject?, error:NSError?) -> Void in
             
             var jsonObject = data as Dictionary<String,AnyObject>
             
