@@ -9,7 +9,7 @@
 import UIKit
 import Alamofire
 
-class HomeViewController: UIViewController, UITableViewDataSource {
+class HomeViewController: UIViewController, UITableViewDataSource ,UICollectionViewDataSource{
     
     private var soirees:[Soiree]=[Soiree]()
     private var peoples:[People]=[People]()
@@ -26,7 +26,14 @@ class HomeViewController: UIViewController, UITableViewDataSource {
     
     @IBOutlet weak var homePageTitle: UINavigationItem!
     
+    // add soiree form outlet
+    @IBOutlet weak var mainCollectionView: UICollectionView!
+    @IBOutlet weak var soireTitleTexField: UITextField!
+    @IBOutlet weak var soireeDescriptiontextField: UITextField!
+    @IBOutlet weak var soireeDatePicker: UIDatePicker!
+    
     private let cellIdentifier               = "soireeCellIdentifier"
+    private let collectionCellIdentifier     = "userCollectionCellIdentifier"
     private let detailSoireeSegueIdentifier  = "SingleSoireeSegueIdentifier"
     
     
@@ -85,12 +92,12 @@ class HomeViewController: UIViewController, UITableViewDataSource {
                 var markStyle: AnyObject! = peopleFromJSON["mark-style"]
                 var markVanne: AnyObject! = peopleFromJSON["mark-vanne"]
                 
-                    var people = People(people_id: Int(people_id as NSNumber), user_id: Int(user_id as NSNumber), event_id: Int(event_id as NSNumber), mark: "\(mark)", markBibine: "\(markBibine)", markDance: "\(markDance)", markDrague: "\(markDrague)", markStyle: "\(markStyle)", markVanne: "\(markVanne)")
+                var people = People(people_id: Int(people_id as NSNumber), user_id: Int(user_id as NSNumber), event_id: Int(event_id as NSNumber), mark: "\(mark)", markBibine: "\(markBibine)", markDance: "\(markDance)", markDrague: "\(markDrague)", markStyle: "\(markStyle)", markVanne: "\(markVanne)")
                 self.peoples.append(people)
             }
             
             self.mainTableView.reloadData()
-            
+            self.mainCollectionView.reloadData()
             
             
         }
@@ -107,25 +114,6 @@ class HomeViewController: UIViewController, UITableViewDataSource {
     
     
     
-    
-    
-    
-    @IBAction func addFormAction(sender: AnyObject) {
-        tableScrollView.hidden  = true
-        formScrollView.hidden   = false
-        backToHomeButton.hidden = false
-        homePageTitle.title     = "Ajouter une soirée"
-        addFormButton.hidden    = true
-    }
-    
-
-    @IBAction func backToHomeButTonAction(sender: AnyObject) {
-        tableScrollView.hidden  = false
-        formScrollView.hidden   = true
-        backToHomeButton.hidden = true
-        homePageTitle.title     = "Accueil"
-        addFormButton.hidden    = false
-    }
     
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
@@ -165,6 +153,78 @@ class HomeViewController: UIViewController, UITableViewDataSource {
         
         return cell
     }
+    
+    //MARK: - UICollectionView data source methods
+    
+    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return users.count
+    }
+    
+    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
+        var cell:UserCollectionViewCell = collectionView.dequeueReusableCellWithReuseIdentifier( collectionCellIdentifier, forIndexPath: indexPath) as UserCollectionViewCell
+        
+        cell.setUser(users[indexPath.row])
+        
+        return cell
+        
+        
+        
+    }
+    
+    //MARK: - Display table or form
+    
+    @IBAction func addFormAction(sender: AnyObject) {
+        tableScrollView.hidden  = true
+        formScrollView.hidden   = false
+        backToHomeButton.hidden = false
+        homePageTitle.title     = "Ajouter une soirée"
+        addFormButton.hidden    = true
+    }
+    
+    
+    @IBAction func backToHomeButTonAction(sender: AnyObject) {
+        tableScrollView.hidden  = false
+        formScrollView.hidden   = true
+        backToHomeButton.hidden = true
+        homePageTitle.title     = "Accueil"
+        addFormButton.hidden    = false
+    }
+    
+    //MARK: - Add soiree
+    func randRange (lower: Int , upper: Int) -> Int {
+        return lower + Int(arc4random_uniform(UInt32(upper - lower + 1)))
+    }
 
+
+    @IBAction func AddSoireeAction(sender: AnyObject) {
+        if soireTitleTexField.text != "" && soireeDescriptiontextField.text != "" {
+            
+            // array of images
+            
+            var imageArray = ["https://www.dropbox.com/s/8up7qjf182fp505/Event-Friends.png?dl=1","https://www.dropbox.com/s/59w0nsasjgygbay/Event-bigbang.png?dl=1","https://www.dropbox.com/s/oxap6tw09k02t1x/Event-global.png?dl=1"]
+            
+            // setting up selected date
+            var dateFormatter = NSDateFormatter()
+            dateFormatter.dateFormat = "d-MM-yyyy"
+            var soireeDate = dateFormatter.stringFromDate(soireeDatePicker.date)
+            
+            var soireeId = soirees.count
+            
+            var i = randRange( 0 ,  upper: 2)
+            
+            soirees.append(Soiree(soireeId: soireeId, title: soireTitleTexField.text, soireeDescription: soireeDescriptiontextField.text, date: soireeDate, coverpic: imageArray[i]))
+            
+            self.mainTableView.reloadData()
+            tableScrollView.hidden  = false
+            formScrollView.hidden   = true
+            backToHomeButton.hidden = true
+            homePageTitle.title     = "Accueil"
+            addFormButton.hidden    = false
+            
+            soireTitleTexField.text = ""
+            soireeDescriptiontextField.text = ""
+        }
+
+    }
 
 }

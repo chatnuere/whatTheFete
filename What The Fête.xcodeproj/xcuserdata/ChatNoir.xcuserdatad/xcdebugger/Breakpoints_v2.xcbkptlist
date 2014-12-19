@@ -15,6 +15,36 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "9"
             endingLineNumber = "9">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "What_The_Fe_te.FbLoginViewController.__deallocating_deinit"
+                  moduleName = "What The Fe&#x302;te"
+                  urlString = "file:///Users/ChatNoir/Documents/github/whatTheFete/What%20The%20Fe%CC%82te/FbLoginViewController.swift"
+                  timestampString = "440656749.564325"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "@objc What_The_Fe_te.FbLoginViewController.__ivar_destroyer"
+                  moduleName = "What The Fe&#x302;te"
+                  urlString = "file:///Users/ChatNoir/Documents/github/whatTheFete/What%20The%20Fe%CC%82te/FbLoginViewController.swift"
+                  timestampString = "440656749.564549"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "15">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
