@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
+<<<<<<< HEAD
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
         <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+=======
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+>>>>>>> 87d3776cede9798ec33b56b21f2605dc572c4e59
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -783,7 +787,7 @@
                                                                 </mask>
                                                             </variation>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="titre" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uex-aq-u37">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="titre" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uex-aq-u37">
                                                             <rect key="frame" x="28" y="149" width="35" height="19"/>
                                                             <fontDescription key="fontDescription" name="Gotham-Bold" family="Gotham" pointSize="16"/>
                                                             <nil key="highlightedColor"/>
@@ -998,6 +1002,7 @@
                         <outlet property="backToHomeButton" destination="dka-k6-Hy3" id="MW0-ly-iNI"/>
                         <outlet property="formScrollView" destination="uJ9-rK-znt" id="FFC-eN-5Wx"/>
                         <outlet property="homePageTitle" destination="kQi-ko-HWI" id="QKc-Od-Tce"/>
+                        <outlet property="imageCoverForm" destination="MpN-gy-VBi" id="jYJ-sA-BAN"/>
                         <outlet property="mainCollectionView" destination="W3U-7C-2aN" id="oq4-kM-4eh"/>
                         <outlet property="mainTableView" destination="1UT-dG-LC8" id="rKm-X5-AZW"/>
                         <outlet property="soireTitleTexField" destination="39D-om-ZEM" id="e53-t5-40G"/>
@@ -1048,7 +1053,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DEC" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="73r-DU-xWS">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="DEC" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="73r-DU-xWS">
                                 <rect key="frame" x="550" y="267" width="34" height="21"/>
                                 <color key="backgroundColor" red="0.98039215690000003" green="0.31372549020000001" blue="0.31372549020000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -1078,7 +1083,7 @@
                                     <constraint firstAttribute="height" constant="130" id="6Sk-Jo-7p8"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="description" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xq9-l0-BSG">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="description" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xq9-l0-BSG">
                                 <rect key="frame" x="16" y="239" width="86" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="Goz-VB-QcZ"/>
@@ -1112,7 +1117,11 @@
                                     </mask>
                                 </variation>
                             </label>
+<<<<<<< HEAD
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="75" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="h3J-Lr-lgY">
+=======
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="75" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="h3J-Lr-lgY">
+>>>>>>> 87d3776cede9798ec33b56b21f2605dc572c4e59
                                 <rect key="frame" x="16" y="300" width="568" height="300"/>
                                 <color key="backgroundColor" red="0.1529411765" green="0.1529411765" blue="0.1529411765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -1135,13 +1144,13 @@
                                                         <constraint firstAttribute="width" constant="60" id="iLS-AD-KfX"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UserName" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n9G-gD-WEt">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="UserName" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n9G-gD-WEt">
                                                     <rect key="frame" x="90" y="8" width="82" height="21"/>
                                                     <fontDescription key="fontDescription" name="Gotham-Bold" family="Gotham" pointSize="16"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="user_title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iWi-B0-iT5">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="user_title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iWi-B0-iT5">
                                                     <rect key="frame" x="90" y="45" width="70" height="21"/>
                                                     <fontDescription key="fontDescription" name="ProximaNova-Light" family="Proxima Nova" pointSize="12"/>
                                                     <color key="textColor" red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1261,12 +1270,12 @@
                                 <exclude reference="UNk-ZI-ipi"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="MKd-d2-B3X"/>
-                                <exclude reference="e90-56-jWn"/>
                                 <exclude reference="Y66-a5-1Vk"/>
                                 <exclude reference="QHa-vo-sKl"/>
                                 <exclude reference="Ykc-NV-Jhi"/>
                                 <exclude reference="jGD-MW-Njb"/>
+                                <exclude reference="MKd-d2-B3X"/>
+                                <exclude reference="e90-56-jWn"/>
                                 <exclude reference="JnR-nf-HGz"/>
                                 <exclude reference="maq-Yt-PUS"/>
                                 <exclude reference="Nru-VT-Mau"/>
@@ -1279,8 +1288,6 @@
                                 <include reference="UNk-ZI-ipi"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="MKd-d2-B3X"/>
-                                <include reference="e90-56-jWn"/>
                                 <exclude reference="Uea-XX-uWe"/>
                                 <exclude reference="Hbe-AF-50s"/>
                                 <include reference="Y66-a5-1Vk"/>
@@ -1289,6 +1296,8 @@
                                 <include reference="QHa-vo-sKl"/>
                                 <include reference="Ykc-NV-Jhi"/>
                                 <include reference="jGD-MW-Njb"/>
+                                <include reference="MKd-d2-B3X"/>
+                                <include reference="e90-56-jWn"/>
                                 <exclude reference="DzE-kL-9e4"/>
                                 <include reference="JnR-nf-HGz"/>
                                 <include reference="maq-Yt-PUS"/>
