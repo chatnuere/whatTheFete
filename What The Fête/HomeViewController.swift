@@ -31,6 +31,7 @@ class HomeViewController: UIViewController, UITableViewDataSource ,UICollectionV
     @IBOutlet weak var soireTitleTexField: UITextField!
     @IBOutlet weak var soireeDescriptiontextField: UITextField!
     @IBOutlet weak var soireeDatePicker: UIDatePicker!
+    @IBOutlet weak var imageCoverForm: UIImageView!
     
     private let cellIdentifier               = "soireeCellIdentifier"
     private let collectionCellIdentifier     = "userCollectionCellIdentifier"
@@ -179,6 +180,9 @@ class HomeViewController: UIViewController, UITableViewDataSource ,UICollectionV
         backToHomeButton.hidden = false
         homePageTitle.title     = "Ajouter une soirée"
         addFormButton.hidden    = true
+        ImageLoader.sharedLoader.imageForUrl("https://www.dropbox.com/s/oxap6tw09k02t1x/Event-global.png?dl=1", completionHandler:{(image: UIImage?, url: String) in
+            self.imageCoverForm.image = image
+        })
     }
     
     
@@ -212,7 +216,13 @@ class HomeViewController: UIViewController, UITableViewDataSource ,UICollectionV
             
             var i = randRange( 0 ,  upper: 2)
             
+            
+            
             soirees.append(Soiree(soireeId: soireeId, title: soireTitleTexField.text, soireeDescription: soireeDescriptiontextField.text, date: soireeDate, coverpic: imageArray[i]))
+            
+            for index in 1...5 {
+                peoples.append(People(people_id: peoples.count, user_id: index, event_id: soireeId , mark: "null", markBibine: "null", markDance: "null", markDrague: "null", markStyle: "null", markVanne: "null"))
+            }
             
             self.mainTableView.reloadData()
             tableScrollView.hidden  = false
