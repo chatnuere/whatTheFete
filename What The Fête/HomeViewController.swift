@@ -115,6 +115,7 @@ class HomeViewController: UIViewController, UITableViewDataSource {
         formScrollView.hidden   = false
         backToHomeButton.hidden = false
         homePageTitle.title     = "Ajouter une soirée"
+        addFormButton.hidden    = true
     }
     
 
@@ -123,6 +124,7 @@ class HomeViewController: UIViewController, UITableViewDataSource {
         formScrollView.hidden   = true
         backToHomeButton.hidden = true
         homePageTitle.title     = "Accueil"
+        addFormButton.hidden    = false
     }
     
     
