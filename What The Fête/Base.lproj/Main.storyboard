@@ -320,14 +320,24 @@
                                                                 </mask>
                                                             </variation>
                                                         </view>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DEC" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L30-EK-v68">
-                                                            <rect key="frame" x="515.5" y="149" width="26.5" height="14"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DEC" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L30-EK-v68">
+                                                            <rect key="frame" x="502" y="149" width="40" height="20"/>
+                                                            <color key="backgroundColor" red="0.98039215686274506" green="0.31372549019607843" blue="0.31372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="40" id="oXC-Y6-bYd"/>
+                                                                <constraint firstAttribute="height" constant="20" id="rrn-pc-b7F"/>
+                                                            </constraints>
                                                             <fontDescription key="fontDescription" name="Gotham-Bold" family="Gotham" pointSize="12"/>
-                                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="15" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IxN-tH-jTS">
-                                                            <rect key="frame" x="518" y="163" width="20" height="21"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IxN-tH-jTS">
+                                                            <rect key="frame" x="502" y="169" width="40" height="20"/>
+                                                            <color key="backgroundColor" red="0.94985006313131315" green="0.94985006313131315" blue="0.94985006313131315" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="40" id="QMO-Gn-zKv"/>
+                                                                <constraint firstAttribute="height" constant="20" id="gc7-pO-BFR"/>
+                                                            </constraints>
                                                             <fontDescription key="fontDescription" name="Gotham-Bold" family="Gotham" pointSize="14"/>
                                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                             <nil key="highlightedColor"/>
@@ -345,11 +355,11 @@
                                                         <constraint firstItem="IeG-uS-LgC" firstAttribute="leading" secondItem="7PV-MD-YYC" secondAttribute="leadingMargin" constant="2" id="ND8-Cq-EiO">
                                                             <variation key="widthClass=compact" constant="17"/>
                                                         </constraint>
+                                                        <constraint firstItem="IxN-tH-jTS" firstAttribute="centerX" secondItem="L30-EK-v68" secondAttribute="centerX" id="OHx-xM-ESn"/>
                                                         <constraint firstItem="Vzy-Vp-Adh" firstAttribute="centerX" secondItem="jhp-My-wMX" secondAttribute="centerX" id="OUv-8B-BXh"/>
                                                         <constraint firstItem="Uex-aq-u37" firstAttribute="leading" secondItem="7PV-MD-YYC" secondAttribute="leadingMargin" constant="2" id="R27-4z-yjf">
                                                             <variation key="widthClass=compact" constant="17"/>
                                                         </constraint>
-                                                        <constraint firstAttribute="trailingMargin" secondItem="IxN-tH-jTS" secondAttribute="trailing" constant="24" id="RtM-NR-EWn"/>
                                                         <constraint firstItem="IeG-uS-LgC" firstAttribute="top" secondItem="Uex-aq-u37" secondAttribute="bottom" constant="15" id="UqQ-WJ-yeu"/>
                                                         <constraint firstItem="Uex-aq-u37" firstAttribute="top" secondItem="Vzy-Vp-Adh" secondAttribute="bottom" constant="20" id="Xtq-Ch-FG3"/>
                                                         <constraint firstAttribute="trailingMargin" secondItem="jhp-My-wMX" secondAttribute="trailing" constant="-8" id="bv8-zy-XZ4"/>
