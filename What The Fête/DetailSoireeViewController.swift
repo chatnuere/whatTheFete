@@ -18,7 +18,8 @@ class DetailSoireeViewController: UIViewController , UITableViewDataSource {
     @IBOutlet weak var singleSoireeImage: UIImageView!
     @IBOutlet weak var singleSoireeTitle: UILabel!
     @IBOutlet weak var singleSoireeDescription: UILabel!
-    @IBOutlet weak var singleSoireeDate: UILabel!
+    @IBOutlet weak var singleSoireeMonth: UILabel!
+    @IBOutlet weak var singleSoireeDay: UILabel!
     
     @IBOutlet weak var usersTableview: UITableView!
     
@@ -33,8 +34,59 @@ class DetailSoireeViewController: UIViewController , UITableViewDataSource {
         self.title                   = soiree.title
         singleSoireeTitle.text       = soiree.title
         singleSoireeDescription.text = soiree.soireeDescription
-        singleSoireeDate.text        = soiree.date
         
+        let splitedDate              = split(soiree.date){$0 == "-"}
+        let soireeDay                = splitedDate[0]
+        
+        var soireeMonth : String
+        
+        switch splitedDate[1] {
+        case "01" :
+            soireeMonth              = "JAN"
+            break
+        case "02" :
+            soireeMonth              = "FEV"
+            break
+        case "03" :
+            soireeMonth              = "MAR"
+            break
+        case "04" :
+            soireeMonth              = "AVR"
+            break
+        case "05" :
+            soireeMonth              = "MAI"
+            break
+        case "06" :
+            soireeMonth              = "JUN"
+            break
+        case "07" :
+            soireeMonth              = "JUL"
+            break
+        case "08" :
+            soireeMonth              = "AOU"
+            break
+        case "09" :
+            soireeMonth              = "SEP"
+            break
+        case "10" :
+            soireeMonth              = "OCT"
+            break
+        case "11" :
+            soireeMonth              = "NOV"
+            break
+        case "12" :
+            soireeMonth              = "DEC"
+            break
+        default   :
+            soireeMonth              = "No"
+            break
+            
+        }
+        
+        
+        
+        singleSoireeMonth.text       = soireeMonth
+        singleSoireeDay.text         = soireeDay
         
         ImageLoader.sharedLoader.imageForUrl(soiree.coverpic, completionHandler:{(image: UIImage?, url: String) in
             self.singleSoireeImage.image = image

@@ -156,16 +156,20 @@ class DetailParticipatingUsersViewController: UIViewController {
         case 0:
             println("case 1")
             rating.alcohol = RatingSlider.value
+            ratinSkillImg.image = UIImage(named:"danse")!
             nextStep()
         case 1:
             println("case 2")
             rating.dance = RatingSlider.value
+            ratinSkillImg.image = UIImage(named:"dragueur")!
             nextStep()
         case 2:
             rating.women = RatingSlider.value
+            ratinSkillImg.image = UIImage(named:"style")!
             nextStep()
         case 3:
             rating.swag = RatingSlider.value
+            ratinSkillImg.image = UIImage(named:"drole")!
             nextStep()
         case 4:
             rating.fun        = RatingSlider.value
@@ -177,7 +181,7 @@ class DetailParticipatingUsersViewController: UIViewController {
             people.markStyle  = "\(Int(rating.swag))"
             people.markVanne  = "\(Int(rating.fun))"
             viewWillAppear(true)
-
+            
         default:
             true
         }
