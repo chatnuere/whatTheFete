@@ -14,6 +14,7 @@
             <string>Gotham-Bold</string>
             <string>Gotham-Bold</string>
             <string>Gotham-Bold</string>
+            <string>Gotham-Bold</string>
         </mutableArray>
         <mutableArray key="ProximaNova-Bold.otf">
             <string>ProximaNova-Bold</string>
@@ -22,6 +23,7 @@
             <string>ProximaNova-Bold</string>
         </mutableArray>
         <mutableArray key="ProximaNova-Light.otf">
+            <string>ProximaNova-Light</string>
             <string>ProximaNova-Light</string>
             <string>ProximaNova-Light</string>
             <string>ProximaNova-Light</string>
@@ -970,20 +972,7 @@
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H1O-S0-O0z">
                                 <rect key="frame" x="16" y="202" width="44" height="29"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="44" id="fMM-gH-ZcR"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="description" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xq9-l0-BSG">
-                                <rect key="frame" x="16" y="239" width="86" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="Goz-VB-QcZ"/>
-                                    <constraint firstAttribute="width" constant="86" id="KQh-9E-AvC"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="Gotham-Bold" family="Gotham" pointSize="16"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -1083,24 +1072,51 @@
                                     <constraint firstAttribute="height" constant="130" id="6Sk-Jo-7p8"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="description" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xq9-l0-BSG">
+                                <rect key="frame" x="16" y="239" width="86" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Goz-VB-QcZ"/>
+                                    <constraint firstAttribute="width" constant="235" id="KQh-9E-AvC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ProximaNova-Light" family="Proxima Nova" pointSize="12"/>
+                                <color key="textColor" red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="H1O-S0-O0z" firstAttribute="leading" secondItem="fnQ-cZ-JnQ" secondAttribute="leadingMargin" id="8RW-Co-vTX"/>
                             <constraint firstItem="h3J-Lr-lgY" firstAttribute="top" secondItem="73r-DU-xWS" secondAttribute="bottom" constant="12" id="8hc-67-jHF"/>
                             <constraint firstItem="h3J-Lr-lgY" firstAttribute="top" secondItem="Xq9-l0-BSG" secondAttribute="bottom" constant="40" id="8p0-y2-yKs"/>
-                            <constraint firstItem="Xq9-l0-BSG" firstAttribute="top" secondItem="H1O-S0-O0z" secondAttribute="bottom" constant="8" symbolic="YES" id="ARZ-FP-XPv"/>
-                            <constraint firstItem="73r-DU-xWS" firstAttribute="top" secondItem="pwO-yH-yOt" secondAttribute="bottom" constant="73" id="BOb-SW-Y8C"/>
+                            <constraint firstItem="73r-DU-xWS" firstAttribute="top" secondItem="pwO-yH-yOt" secondAttribute="bottom" constant="73" id="BOb-SW-Y8C">
+                                <variation key="heightClass=regular-widthClass=compact" constant="137"/>
+                            </constraint>
                             <constraint firstItem="pwO-yH-yOt" firstAttribute="leading" secondItem="fnQ-cZ-JnQ" secondAttribute="leading" id="Dfc-Gf-Hgr"/>
                             <constraint firstItem="73r-DU-xWS" firstAttribute="trailing" secondItem="h3J-Lr-lgY" secondAttribute="trailing" id="DzE-kL-9e4"/>
                             <constraint firstAttribute="trailing" secondItem="pwO-yH-yOt" secondAttribute="trailing" id="ERQ-HL-jH8"/>
                             <constraint firstAttribute="bottomMargin" secondItem="h3J-Lr-lgY" secondAttribute="bottom" constant="-64" id="GIz-mM-GDb"/>
                             <constraint firstItem="Xq9-l0-BSG" firstAttribute="leading" secondItem="h3J-Lr-lgY" secondAttribute="leading" id="Hbe-AF-50s"/>
                             <constraint firstItem="pwO-yH-yOt" firstAttribute="centerX" secondItem="h3J-Lr-lgY" secondAttribute="centerX" id="Uea-XX-uWe"/>
-                            <constraint firstItem="H1O-S0-O0z" firstAttribute="top" secondItem="pwO-yH-yOt" secondAttribute="bottom" constant="8" symbolic="YES" id="cwf-Kn-rzB"/>
-                            <constraint firstItem="pwO-yH-yOt" firstAttribute="top" secondItem="Tl2-a6-Dj3" secondAttribute="bottom" constant="64" id="ssZ-13-ufY"/>
+                            <constraint firstItem="Xq9-l0-BSG" firstAttribute="top" secondItem="H1O-S0-O0z" secondAttribute="bottom" constant="10" id="Y66-a5-1Vk"/>
+                            <constraint firstItem="H1O-S0-O0z" firstAttribute="top" secondItem="pwO-yH-yOt" secondAttribute="bottom" constant="8" symbolic="YES" id="cwf-Kn-rzB">
+                                <variation key="heightClass=regular-widthClass=compact" constant="20"/>
+                            </constraint>
+                            <constraint firstItem="pwO-yH-yOt" firstAttribute="top" secondItem="Tl2-a6-Dj3" secondAttribute="bottom" constant="64" id="ssZ-13-ufY">
+                                <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
+                            </constraint>
                             <constraint firstItem="Xq9-l0-BSG" firstAttribute="leading" secondItem="H1O-S0-O0z" secondAttribute="leading" id="wEd-Kb-Tlz"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Y66-a5-1Vk"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="Y66-a5-1Vk"/>
+                                <exclude reference="8p0-y2-yKs"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="singleSoireeDate" destination="73r-DU-xWS" id="VSH-p4-JIF"/>
