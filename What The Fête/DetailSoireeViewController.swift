@@ -36,13 +36,9 @@ class DetailSoireeViewController: UIViewController , UITableViewDataSource {
         singleSoireeDate.text        = soiree.date
         
         
-        //Construct the imgUrl to get an image URL for the pages
-        let urlString: NSString = soiree.coverpic as NSString
-        var imgURL: NSURL       = NSURL(string: urlString)!
-        var imgData: NSData     = NSData(contentsOfURL: imgURL)!
-        
-        ///append each image into UIImage
-        singleSoireeImage.image    = UIImage(data: imgData)!
+        ImageLoader.sharedLoader.imageForUrl(soiree.coverpic, completionHandler:{(image: UIImage?, url: String) in
+            self.singleSoireeImage.image = image
+        })
         
 
         // Do any additional setup after loading the view.
@@ -50,7 +46,7 @@ class DetailSoireeViewController: UIViewController , UITableViewDataSource {
         
         for people in peoples {
             if people.event_id == soiree.soireeId{
-                participatingUsers.append(users[people.user_id])
+                participatingUsers.append(users[people.user_id - 1])
             }
         }
         

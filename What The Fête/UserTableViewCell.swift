@@ -32,13 +32,9 @@ class UserTableViewCell: UITableViewCell {
         userTitle.text          = user.user_title
         
         
-        //Construct the imgUrl to get an image URL for the pages
-        let urlString: NSString = user.pictureurl as NSString
-        var imgURL: NSURL       = NSURL(string: urlString)!
-        var imgData: NSData     = NSData(contentsOfURL: imgURL)!
-        
-        ///append each image into UIImage
-        userPicture.image    = UIImage(data: imgData)!
+        ImageLoader.sharedLoader.imageForUrl(user.pictureurl, completionHandler:{(image: UIImage?, url: String) in
+            self.userPicture.image = image
+        })
         
         
         

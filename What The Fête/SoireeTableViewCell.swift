@@ -83,15 +83,10 @@ class SoireeTableViewCell: UITableViewCell {
         
         soireeDateMonth.text    = soireeMonth
         soireeDateDay.text      = soireeDay
-        
-        
-        //Construct the imgUrl to get an image URL for the pages
-        let urlString: NSString = soiree.coverpic as NSString
-        var imgURL: NSURL       = NSURL(string: urlString)!
-        var imgData: NSData     = NSData(contentsOfURL: imgURL)!
-        
-        ///append each image into UIImage
-        soireeCoverpic.image    = UIImage(data: imgData)!
+
+        ImageLoader.sharedLoader.imageForUrl(soiree.coverpic, completionHandler:{(image: UIImage?, url: String) in
+            self.soireeCoverpic.image = image
+        })
         
     }
 }

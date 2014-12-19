@@ -22,7 +22,7 @@ class DetailParticipatingUsersViewController: UIViewController {
     
 
 
-    /// function to blur background image
+    /// function to blur background image ( ne marche plus avec l'image loader
     
     func applyBlurEffect(image: UIImage){
         var imageToBlur = CIImage(image: image)
@@ -87,27 +87,15 @@ class DetailParticipatingUsersViewController: UIViewController {
         
     
         
+        ImageLoader.sharedLoader.imageForUrl(soiree.coverpic, completionHandler:{(image: UIImage?, url: String) in
+            self.bacgroundSoireeCoverPic.image = image
+        })
         
-        //Construct the imgUrl to get an image URL for the pages
-        let bacgroundSoireeCoverPicurlString: NSString = soiree.coverpic as NSString
-        var bacgroundSoireeCoverPicimgURL: NSURL       = NSURL(string: bacgroundSoireeCoverPicurlString)!
-        var bacgroundSoireeCoverPicimgData: NSData     = NSData(contentsOfURL: bacgroundSoireeCoverPicimgURL)!
+        //applyBlurEffect(bacgroundSoireeCoverPic.image! )
         
-        ///append each image into UIImage
-        bacgroundSoireeCoverPic.image    = UIImage(data: bacgroundSoireeCoverPicimgData)!
-        
-        applyBlurEffect(bacgroundSoireeCoverPic.image! )
-        
-
-        
-        
-        //Construct the imgUrl to get an image URL for the pages
-        let currentFriendProfilePicurlString: NSString = user.pictureurl as NSString
-        var currentFriendProfilePicimgURL: NSURL       = NSURL(string: currentFriendProfilePicurlString)!
-        var currentFriendProfilePicimgData: NSData     = NSData(contentsOfURL: currentFriendProfilePicimgURL)!
-        
-        ///append each image into UIImage
-        currentFriendProfilePic.image    = UIImage(data: currentFriendProfilePicimgData)!
+        ImageLoader.sharedLoader.imageForUrl(user.pictureurl, completionHandler:{(image: UIImage?, url: String) in
+            self.currentFriendProfilePic.image = image
+        })
 
 
         // setting up the array of skills

@@ -19,6 +19,7 @@
 		2D6839C11A422ADC003F2497 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6839C01A422ADC003F2497 /* UserTableViewCell.swift */; };
 		2D6839C31A4233DB003F2497 /* DetailParticipatingUsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6839C21A4233DB003F2497 /* DetailParticipatingUsersViewController.swift */; };
 		2D6D55DF1A438A3100F65502 /* AddSoireeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6D55DE1A438A3100F65502 /* AddSoireeViewController.swift */; };
+		2D76B3961A43A61E009E0E9D /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D76B3951A43A61E009E0E9D /* ImageLoader.swift */; };
 		2D7EE2231A434EAF0068E059 /* Rating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7EE2221A434EAF0068E059 /* Rating.swift */; };
 		2D7EE2261A4351640068E059 /* Skill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7EE2251A4351640068E059 /* Skill.swift */; };
 		2D9507F41A40C54600B011A5 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AD5E686C1A40918E00FBF012 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -93,6 +94,7 @@
 		2D6839C01A422ADC003F2497 /* UserTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
 		2D6839C21A4233DB003F2497 /* DetailParticipatingUsersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailParticipatingUsersViewController.swift; sourceTree = "<group>"; };
 		2D6D55DE1A438A3100F65502 /* AddSoireeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddSoireeViewController.swift; sourceTree = "<group>"; };
+		2D76B3951A43A61E009E0E9D /* ImageLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
 		2D7EE2221A434EAF0068E059 /* Rating.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rating.swift; sourceTree = "<group>"; };
 		2D7EE2251A4351640068E059 /* Skill.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Skill.swift; sourceTree = "<group>"; };
 		2DA27C511A40D579002B3AF8 /* Soiree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Soiree.swift; sourceTree = "<group>"; };
@@ -155,6 +157,7 @@
 				2D7EE2221A434EAF0068E059 /* Rating.swift */,
 				2D7EE2251A4351640068E059 /* Skill.swift */,
 				2D15CA761A430BA800A7A5CC /* ParticipatingUser.swift */,
+				2D76B3951A43A61E009E0E9D /* ImageLoader.swift */,
 				2DA27C541A40D80F002B3AF8 /* SoireeTableViewCell.swift */,
 				2D6839C01A422ADC003F2497 /* UserTableViewCell.swift */,
 				2D1AE7E81A405EFF00F111E6 /* Bridge-Header.h */,
@@ -332,6 +335,7 @@
 			files = (
 				2DA27C571A41765E002B3AF8 /* DetailSoireeViewController.swift in Sources */,
 				2D1AE7C31A4058DA00F111E6 /* FbLoginViewController.swift in Sources */,
+				2D76B3961A43A61E009E0E9D /* ImageLoader.swift in Sources */,
 				2D1AE7C11A4058DA00F111E6 /* AppDelegate.swift in Sources */,
 				2DA27C551A40D80F002B3AF8 /* SoireeTableViewCell.swift in Sources */,
 				2D6839C11A422ADC003F2497 /* UserTableViewCell.swift in Sources */,
