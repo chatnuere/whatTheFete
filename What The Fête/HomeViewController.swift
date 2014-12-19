@@ -17,9 +17,14 @@ class HomeViewController: UIViewController, UITableViewDataSource {
 
     
     @IBOutlet weak var mainTableView: UITableView!
+    @IBOutlet weak var tableScrollView: UIScrollView!
+    @IBOutlet weak var formScrollView: UIScrollView!
 
+    @IBOutlet weak var addFormButton: UIButton!
+    @IBOutlet weak var backToHomeButton: UIButton!
     
     
+    @IBOutlet weak var homePageTitle: UINavigationItem!
     
     private let cellIdentifier               = "soireeCellIdentifier"
     private let detailSoireeSegueIdentifier  = "SingleSoireeSegueIdentifier"
@@ -94,7 +99,31 @@ class HomeViewController: UIViewController, UITableViewDataSource {
         // Do any additional setup after loading the view.
     }
     
+    override func viewWillAppear(animated: Bool) {
+        tableScrollView.hidden  = false
+        formScrollView.hidden   = true
+        backToHomeButton.hidden = true
+    }
     
+    
+    
+    
+    
+    
+    @IBAction func addFormAction(sender: AnyObject) {
+        tableScrollView.hidden  = true
+        formScrollView.hidden   = false
+        backToHomeButton.hidden = false
+        homePageTitle.title     = "Ajouter une soirée"
+    }
+    
+
+    @IBAction func backToHomeButTonAction(sender: AnyObject) {
+        tableScrollView.hidden  = false
+        formScrollView.hidden   = true
+        backToHomeButton.hidden = true
+        homePageTitle.title     = "Accueil"
+    }
     
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
